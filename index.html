@@ -5,8 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Favicon & Web Manifest -->
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-  <link rel="manifest" href="./site.webmanifest" />
+  <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
+  <link rel="manifest" href="/site.webmanifest" />
   <title>Pracownia Projektowa Gdańsk & Chojnice | Projekty, Kierownik Budowy — GOPROJECT</title>
   <meta name="description"
     content="Licencjonowana pracownia projektowa GOPROJECT mgr inż. Adam Kubat. Projekty budowlane domów, adaptacje WZ/MPZP, kierownik budowy i nadzór inwestorski w Gdańsku, Chojnicach i na Pomorzu." />
@@ -446,6 +448,7 @@
       }
     }
   </style>
+  <script defer src="/js/analytics.js" data-measurement-id="G-38PL1XHPN5" data-privacy-url="/polityka-prywatnosci.html"></script>
 </head>
 
 <body class="bg-white text-black font-sans antialiased selection:bg-accent selection:text-white">
@@ -1893,6 +1896,7 @@
             const result = await res.json();
 
             if (res.ok && result.success) {
+              document.dispatchEvent(new Event('website:lead-sent'));
               if (status) {
                 status.className = 'mt-4 p-4 bg-emerald-950/80 border border-emerald-500/60 text-emerald-300 text-xs font-mono text-center';
                 status.innerHTML = '✓ Dziękujemy! Wiadomość została pomyślnie wysłana. Skontaktujemy się w ciągu 24h.';

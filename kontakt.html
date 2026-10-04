@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Favicon & Web Manifest -->
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-  <link rel="manifest" href="./site.webmanifest" />
+  <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32 48x48" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
+  <link rel="manifest" href="/site.webmanifest" />
   <title>Kontakt & Bezpłatna Konsultacja | GOPROJECT mgr inż. Adam Kubat</title>
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="description" content="Skontaktuj się z pracownią GOPROJECT. Zadzwoń: +48 884 757 815 lub napisz do mgr inż. Adama Kubata. Bezpłatna wstępna analiza działki i wycena w 24h." />
@@ -145,6 +147,7 @@
     ]
   }
   </script>
+  <script defer src="/js/analytics.js" data-measurement-id="G-38PL1XHPN5" data-privacy-url="/polityka-prywatnosci.html"></script>
 </head>
 <body class="bg-white text-black font-sans antialiased selection:bg-accent selection:text-white flex flex-col min-h-screen">
 
@@ -758,6 +761,7 @@
             const result = await res.json();
 
             if (res.ok && result.success) {
+              document.dispatchEvent(new Event('website:lead-sent'));
               if (status) {
                 status.className = 'mt-4 p-4 bg-emerald-950/80 border border-emerald-500/60 text-emerald-300 text-xs font-mono text-center leading-relaxed';
                 status.innerHTML = '✓ Dziękujemy! Twoja wiadomość została pomyślnie wysłana do pracowni. Odpowiemy w ciągu 24 godzin.';

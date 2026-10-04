@@ -7,3 +7,4 @@ _raw_assets/
 _live.html
 _live_img/
 *.zip
+.chrome_tmp/
