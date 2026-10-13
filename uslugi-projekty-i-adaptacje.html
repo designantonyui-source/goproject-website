@@ -131,6 +131,13 @@
     .service-choice > div:first-child { background: #0a0a0a; color: #fff; }
     .service-choice > div:first-child p { color: #d4d4d8; }
     .service-choice h3 { max-width: 21ch; }
+    .service-prep { border-top: 1px solid #d4d4d8; border-bottom: 1px solid #d4d4d8; padding: clamp(2rem, 4vw, 3.5rem) 0; }
+    .service-prep-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2.5rem, 6vw, 6rem); }
+    .service-prep h2 { max-width: 18ch; }
+    .service-prep-intro p { margin-bottom: 1.5rem; }
+    .service-prep a { min-height: 3rem; }
+    .service-prep-list { border-top: 1px solid #d4d4d8; }
+    .service-prep-list li { display: grid; grid-template-columns: 2.25rem minmax(0, 1fr); gap: 1.25rem; padding: 1.25rem 0; border-bottom: 1px solid #d4d4d8; }
     .service-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid #d4d4d8; }
     .service-steps li { min-width: 0; padding: 1.5rem 1.5rem 0 0; }
     .service-steps li + li { border-left: 1px solid #e8e8e8; padding-left: 1.5rem; }
@@ -139,18 +146,39 @@
     .project-showcase a { display: block; height: 100%; border: 1px solid #e8e8e8; background: #fafafa; transition: border-color .2s ease; }
     .project-showcase a:hover, .project-showcase a:focus-visible { border-color: #ff3b00; }
     .project-showcase img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
-    .service-faq { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3rem; }
-    .service-faq > div { border-top: 1px solid #d4d4d8; padding: 1.5rem 0 1.75rem; }
-    .service-glossary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3rem; }
-    .service-glossary > div { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem; border-top: 1px solid #d4d4d8; padding: 1.3rem 0; }
-    .service-glossary abbr { text-decoration: none; }
+    .service-faq { max-width: 62rem; margin-inline: auto; }
+    .service-faq details { border-top: 1px solid #d4d4d8; }
+    .service-faq details:last-child { border-bottom: 1px solid #d4d4d8; }
+    .service-faq summary { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.45rem 0; cursor: pointer; list-style: none; }
+    .service-faq summary::-webkit-details-marker { display: none; }
+    .service-faq summary::after { content: '+'; color: #ff3b00; font-family: monospace; font-size: 1.5rem; line-height: 1; flex: none; }
+    .service-faq details[open] summary::after { content: '−'; }
+    .service-faq summary:hover span, .service-faq summary:focus-visible span { color: #ff3b00; }
+    .service-faq summary:focus-visible { outline: 2px solid #ff3b00; outline-offset: 3px; }
+    .service-faq summary span { transition: color .2s ease; }
+    .service-faq details p { max-width: 48rem; padding: 0 2.5rem 1.5rem 0; }
+    .term-tip { display: inline; }
+    .term-cluster { white-space: nowrap; }
+    .term-tip-trigger { display: inline; padding: 0; border: 0; border-bottom: 1px dotted currentColor; background: transparent; color: inherit; font: inherit; font-weight: inherit; line-height: inherit; cursor: help; }
+    .term-tip-trigger:hover, .term-tip-trigger:focus-visible, .term-tip.is-open .term-tip-trigger { color: #ff3b00; border-bottom-color: #ff3b00; }
+    .term-tip-trigger:focus-visible { outline: 2px solid #ff3b00; outline-offset: 3px; }
+    .term-tip-bubble { position: fixed; z-index: 100; width: min(19rem, calc(100vw - 2rem)); padding: 1rem 1.15rem; background: #111; color: #fff; box-shadow: 0 12px 32px rgb(0 0 0 / .18); font: 400 .82rem/1.55 'Plus Jakarta Sans', sans-serif; text-align: left; white-space: normal; visibility: hidden; opacity: 0; pointer-events: none; transition: opacity .15s ease; }
+    .term-tip.is-open .term-tip-bubble { visibility: visible; opacity: 1; }
+    .term-tip-bubble strong { display: block; margin-bottom: .35rem; font-weight: 700; }
+    .term-tip-bubble span { display: block; color: #e4e4e7; }
     @media (max-width: 767px) {
-      .service-choice, .project-showcase, .service-faq, .service-glossary { grid-template-columns: 1fr; }
+      .service-choice, .project-showcase { grid-template-columns: 1fr; }
       .service-steps { grid-template-columns: 1fr; border-top: 0; }
       .service-steps li, .service-steps li + li { border-left: 0; border-top: 1px solid #d4d4d8; padding: 1rem 0 1.5rem; }
       .service-steps .step-number { margin: 0 0 1rem; }
-      .service-glossary > div { grid-template-columns: 4.5rem 1fr; gap: .75rem; }
     }
+    @media (min-width: 768px) and (max-width: 900px) {
+      .service-choice { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 900px) {
+      .service-prep-layout { grid-template-columns: 1fr; }
+    }
+    .project-all-link { margin-top: 2.5rem; min-height: 2.75rem; align-items: center; }
   </style>
   <script defer src="/js/analytics.js" data-measurement-id="G-38PL1XHPN5" data-privacy-url="/polityka-prywatnosci.html"></script>
 </head>
@@ -287,7 +315,7 @@
             Projektowanie domów i adaptacja projektów gotowych w Chojnicach
           </h1>
           <p class="font-sans text-gray-700 text-base md:text-xl leading-relaxed">
-            Tworzymy indywidualne projekty domów i dopasowujemy projekty gotowe do konkretnej działki. Przy adaptacji uwzględniamy miejscowy plan zagospodarowania przestrzennego (MPZP) lub decyzję o warunkach zabudowy (WZ). Obsługujemy klientów z Chojnic, Gdańska i województwa pomorskiego.
+            Tworzymy indywidualne projekty domów i dopasowujemy projekty gotowe do konkretnej działki. Przy adaptacji uwzględniamy miejscowy plan zagospodarowania przestrzennego <span class="term-cluster">(<span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-1" aria-expanded="false">MPZP</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-1"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span>)</span> lub decyzję o warunkach zabudowy <span class="term-cluster">(<span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-2" aria-expanded="false">WZ</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-2"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>)</span>. Obsługujemy klientów z Chojnic, Gdańska i województwa pomorskiego.
           </p>
         </div>
 
@@ -300,7 +328,7 @@
             <div class="space-y-2.5 font-sans text-xs text-gray-600 border-t border-gray-200 pt-3">
               <div class="flex items-center justify-between">
                 <span class="text-gray-400 font-mono text-[11px]">Zakres projektu:</span>
-                <span class="font-bold text-black">PZT + PAB + PT</span>
+                <span class="font-bold text-black"><span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-3" aria-expanded="false">PZT</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-3"><strong>Projekt zagospodarowania działki lub terenu</strong><span>Pokazuje położenie budynku na działce i sposób zagospodarowania terenu.</span></span></span> + <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-4" aria-expanded="false">PAB</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-4"><strong>Projekt architektoniczno-budowlany</strong><span>Opisuje formę budynku, jego funkcję oraz podstawowe rozwiązania architektoniczne.</span></span></span> + <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-5" aria-expanded="false">PT</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-5"><strong>Projekt techniczny</strong><span>Zawiera rozwiązania techniczne potrzebne do realizacji budynku, między innymi konstrukcyjne i instalacyjne.</span></span></span></span>
               </div>
               <div class="flex items-center justify-between">
                 <span class="text-gray-400 font-mono text-[11px]">Czas adaptacji:</span>
@@ -331,13 +359,13 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div class="p-6 bg-studio-surface border border-gray-200">
             <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">01</div>
-            <h3 class="font-heading font-bold text-lg mb-2">Indywidualne projekty (PAB + PT)</h3>
-            <p class="font-sans text-xs text-gray-600">Projekt domu z dokumentacją architektoniczną i techniczną (PAB + PT).</p>
+            <h3 class="font-heading font-bold text-lg mb-2">Indywidualne projekty (<span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-6" aria-expanded="false">PAB</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-6"><strong>Projekt architektoniczno-budowlany</strong><span>Opisuje formę budynku, jego funkcję oraz podstawowe rozwiązania architektoniczne.</span></span></span> + <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-7" aria-expanded="false">PT</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-7"><strong>Projekt techniczny</strong><span>Zawiera rozwiązania techniczne potrzebne do realizacji budynku, między innymi konstrukcyjne i instalacyjne.</span></span></span>)</h3>
+            <p class="font-sans text-xs text-gray-600">Projekt domu z dokumentacją architektoniczną i techniczną (<span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-8" aria-expanded="false">PAB</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-8"><strong>Projekt architektoniczno-budowlany</strong><span>Opisuje formę budynku, jego funkcję oraz podstawowe rozwiązania architektoniczne.</span></span></span> + <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-9" aria-expanded="false">PT</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-9"><strong>Projekt techniczny</strong><span>Zawiera rozwiązania techniczne potrzebne do realizacji budynku, między innymi konstrukcyjne i instalacyjne.</span></span></span>).</p>
           </div>
           <div class="p-6 bg-studio-surface border border-gray-200">
             <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">02</div>
-            <h3 class="font-heading font-bold text-lg mb-2">Adaptacja projektów gotowych</h3>
-            <p class="font-sans text-xs text-gray-600">Adaptacja projektu katalogowego do warunków działki oraz wymagań MPZP lub WZ.</p>
+            <h3 class="font-heading font-bold text-lg mb-2"><span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-10" aria-expanded="false">Adaptacja</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-10"><strong>Adaptacja projektu gotowego</strong><span>Dostosowanie wybranego projektu do warunków konkretnej działki i planowanej inwestycji.</span></span></span> projektów gotowych</h3>
+            <p class="font-sans text-xs text-gray-600">Adaptacja projektu katalogowego do warunków działki oraz wymagań <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-11" aria-expanded="false">MPZP</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-11"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span> lub <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-12" aria-expanded="false">WZ</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-12"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>.</p>
           </div>
           <div class="p-6 bg-studio-surface border border-gray-200">
             <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">03</div>
@@ -353,22 +381,19 @@
       </div>
 
       <!-- PRACTICAL PROJECT PREPARATION -->
-      <section class="mb-20 p-8 md:p-10 bg-studio-surface border border-gray-200">
-        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
-          <div class="max-w-4xl">
+      <section class="service-prep mb-20" aria-labelledby="przygotowanie-projektu">
+        <div class="service-prep-layout">
+          <div class="service-prep-intro">
             <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-2">// PRZYGOTOWANIE DO PROJEKTU</span>
-            <h2 class="font-heading font-bold text-2xl md:text-4xl mb-4">Co przygotować do projektu domu lub adaptacji?</h2>
-            <p class="font-sans text-gray-700 text-sm md:text-base leading-relaxed mb-4">
-              Przed rozmową zastanów się, jakiego domu potrzebujesz: jaka powierzchnia, liczba kondygnacji, garaż i funkcje są dla Ciebie ważne. Przy adaptacji dołącz nazwę lub link do wybranego projektu gotowego. Przydatne będą też dostępne informacje o działce oraz miejscowym planie zagospodarowania przestrzennego (MPZP) albo warunkach zabudowy (WZ).
-            </p>
-            <p class="font-sans text-gray-700 text-sm md:text-base leading-relaxed">
-              Zakres prac ustalamy do konkretnego zamierzenia. Skontaktuj się z GoProject w sprawie projektu domu lub adaptacji w Chojnicach, Gdańsku i województwie pomorskim.
-            </p>
+            <h2 id="przygotowanie-projektu" class="font-heading font-bold text-2xl md:text-4xl mb-4">Co przygotować do projektu domu lub adaptacji?</h2>
+            <p class="font-sans text-gray-700 text-sm md:text-base leading-relaxed max-w-lg">Te trzy informacje pomogą ustalić zakres prac. Jeśli nie masz jeszcze wszystkich dokumentów, omówimy je podczas rozmowy.</p>
+            <a href="/kontakt" class="px-6 bg-black text-white hover:bg-accent font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center transition-all">Omów projekt z GoProject &rarr;</a>
           </div>
-          <div class="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0">
-            <a href="/kontakt" class="h-12 px-6 bg-black text-white hover:bg-accent font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center transition-all">Omów projekt z GoProject &rarr;</a>
-            <a href="/projekty" class="h-12 px-6 border border-gray-300 text-black hover:border-black font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center transition-all">Zobacz portfolio projektów</a>
-          </div>
+          <ol class="service-prep-list">
+            <li><span class="font-mono text-sm font-bold text-accent">01</span><div><h3 class="font-heading font-bold text-lg mb-1">Potrzeby domowników</h3><p class="font-sans text-sm text-gray-700 leading-relaxed">Przybliżona powierzchnia domu, liczba kondygnacji, garaż i ważne dla Ciebie funkcje.</p></div></li>
+            <li><span class="font-mono text-sm font-bold text-accent">02</span><div><h3 class="font-heading font-bold text-lg mb-1">Wybrany projekt gotowy</h3><p class="font-sans text-sm text-gray-700 leading-relaxed">Przy adaptacji prześlij nazwę lub link do projektu katalogowego, jeśli już go masz.</p></div></li>
+            <li><span class="font-mono text-sm font-bold text-accent">03</span><div><h3 class="font-heading font-bold text-lg mb-1">Informacje o działce</h3><p class="font-sans text-sm text-gray-700 leading-relaxed">Numer działki oraz dostępne dokumenty dotyczące <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-13" aria-expanded="false">MPZP</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-13"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span> lub decyzji <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-14" aria-expanded="false">WZ</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-14"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>.</p></div></li>
+          </ol>
         </div>
       </section>
 
@@ -387,7 +412,7 @@
           <div>
             <span class="font-mono text-xs font-bold text-accent uppercase tracking-wider block mb-5">02 / NA BAZIE PROJEKTU</span>
             <h3 class="font-heading font-bold text-2xl mb-4">Adaptacja projektu gotowego</h3>
-            <p class="font-sans text-gray-700 text-sm md:text-base leading-relaxed mb-4">Ma sens, gdy wybrany projekt odpowiada Twoim potrzebom. Trzeba jednak sprawdzić, czy można go zrealizować na konkretnej działce i czy odpowiada ustaleniom MPZP lub WZ.</p>
+            <p class="font-sans text-gray-700 text-sm md:text-base leading-relaxed mb-4">Ma sens, gdy wybrany projekt odpowiada Twoim potrzebom. Trzeba jednak sprawdzić, czy można go zrealizować na konkretnej działce i czy odpowiada ustaleniom <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-15" aria-expanded="false">MPZP</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-15"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span> lub <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-16" aria-expanded="false">WZ</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-16"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>.</p>
             <p class="font-sans text-gray-700 text-sm md:text-base leading-relaxed">Zakres zmian i wymaganych opracowań ustalamy po przejrzeniu projektu oraz dokumentów działki. Dzięki temu wiesz, co obejmuje wycena.</p>
           </div>
         </div>
@@ -408,7 +433,7 @@
             <span class="step-number font-mono text-sm font-bold" aria-hidden="true">2</span>
             <span class="font-mono text-xs font-bold text-accent block mb-3">WERYFIKACJA</span>
             <h3 class="font-heading font-bold text-lg mb-2">Sprawdzamy warunki</h3>
-            <p class="font-sans text-sm text-gray-700 leading-relaxed">Analizujemy dostępne informacje o działce i ustalenia MPZP lub WZ.</p>
+            <p class="font-sans text-sm text-gray-700 leading-relaxed">Analizujemy dostępne informacje o działce i ustalenia <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-17" aria-expanded="false">MPZP</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-17"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span> lub <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-18" aria-expanded="false">WZ</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-18"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>.</p>
           </li>
           <li>
             <span class="step-number font-mono text-sm font-bold" aria-hidden="true">3</span>
@@ -432,54 +457,41 @@
         <p class="font-sans text-gray-700 text-sm md:text-base leading-relaxed max-w-3xl mb-8">W portfolio pokazujemy rozwiązania dla różnych potrzeb i działek. Zobacz zakres oraz wizualizacje wybranych projektów.</p>
         <div class="project-showcase">
           <a href="/projekt-dom-jednorodzinny-chojnice">
-            <img src="/img/projects/dom-jednorodzinny-chojnice/dom-jednorodzinny-chojnice-elewacja-frontowa-600w.jpg" width="600" height="340" loading="lazy" alt="Wizualizacja elewacji frontowej domu jednorodzinnego w Chojnicach">
+            <img src="/img/projects/dom-jednorodzinny-chojnice/dom-jednorodzinny-chojnice-strefa-wejsciowa-i-wnetrze-600w.jpg" srcset="/img/projects/dom-jednorodzinny-chojnice/dom-jednorodzinny-chojnice-strefa-wejsciowa-i-wnetrze-600w.jpg 600w, /img/projects/dom-jednorodzinny-chojnice/dom-jednorodzinny-chojnice-strefa-wejsciowa-i-wnetrze-1600w.jpg 1600w" sizes="(min-width: 768px) 50vw, 100vw" width="600" height="340" loading="lazy" alt="Wizualizacja strefy wejściowej i wnętrza domu jednorodzinnego w Chojnicach">
             <span class="flex items-center justify-between gap-4 p-5 md:p-6 font-heading font-bold text-base md:text-lg"><span>Dom jednorodzinny w Chojnicach</span><span class="text-accent text-2xl" aria-hidden="true">↗</span></span>
           </a>
           <a href="/projekt-dom-parterowy-z-garazem">
-            <img src="/img/projects/dom-parterowy-z-garazem/dom-parterowy-z-garazem-elewacja-frontowa.jpg" width="1200" height="896" loading="lazy" alt="Wizualizacja elewacji frontowej domu parterowego z garażem">
+            <img src="/img/projects/dom-parterowy-z-garazem/dom-parterowy-z-garazem-elewacja-boczna-ogrod.jpg" width="1200" height="896" loading="lazy" alt="Wizualizacja bocznej elewacji i ogrodu domu parterowego z garażem">
             <span class="flex items-center justify-between gap-4 p-5 md:p-6 font-heading font-bold text-base md:text-lg"><span>Dom parterowy z garażem</span><span class="text-accent text-2xl" aria-hidden="true">↗</span></span>
           </a>
         </div>
-        <a href="/projekty" class="inline-flex mt-6 font-mono text-xs font-bold uppercase tracking-wider border-b border-accent pb-1 hover:text-accent transition-colors">Zobacz wszystkie projekty ↗</a>
+        <a href="/projekty" class="project-all-link inline-flex font-mono text-xs font-bold uppercase tracking-wider border-b border-accent hover:text-accent transition-colors">Zobacz wszystkie projekty ↗</a>
       </section>
 
       <!-- COMMON QUESTIONS -->
       <section class="mb-20" aria-labelledby="pytania-projekty">
-        <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-2">// PRZED ROZPOCZĘCIEM</span>
-        <h2 id="pytania-projekty" class="font-heading font-bold text-2xl md:text-4xl mb-8">Pytania o projekt domu i adaptację</h2>
-        <div class="service-faq">
-          <div>
-            <h3 class="font-heading font-bold text-lg mb-2">Czy mogę zgłosić się bez gotowego projektu?</h3>
-            <p class="font-sans text-sm text-gray-700 leading-relaxed">Tak. Opisz działkę i dom, który chcesz zbudować. Podczas rozmowy ustalimy, czy lepiej zacząć od projektu indywidualnego, czy poszukać projektu gotowego.</p>
-          </div>
-          <div>
-            <h3 class="font-heading font-bold text-lg mb-2">Jakie dokumenty przydadzą się przy adaptacji?</h3>
-            <p class="font-sans text-sm text-gray-700 leading-relaxed">Prześlij link lub nazwę projektu gotowego, dane działki oraz posiadane dokumenty dotyczące MPZP albo WZ. Po ich przejrzeniu wskażemy, co jeszcze będzie potrzebne.</p>
-          </div>
-          <div>
-            <h3 class="font-heading font-bold text-lg mb-2">Czy projekt gotowy pasuje do każdej działki?</h3>
-            <p class="font-sans text-sm text-gray-700 leading-relaxed">Nie zawsze. Znaczenie mają między innymi wymiary działki, dojazd i ustalenia MPZP lub WZ. Dlatego warto sprawdzić projekt przed podjęciem dalszych decyzji.</p>
-          </div>
-          <div>
-            <h3 class="font-heading font-bold text-lg mb-2">Od czego zależy cena projektu lub adaptacji?</h3>
-            <p class="font-sans text-sm text-gray-700 leading-relaxed">Od zakresu dokumentacji, złożoności budynku, warunków działki oraz potrzebnych zmian. Wycenę przygotowujemy po poznaniu założeń i dostępnych dokumentów.</p>
-          </div>
+        <div class="text-center">
+          <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-2">// PRZED ROZPOCZĘCIEM</span>
+          <h2 id="pytania-projekty" class="font-heading font-bold text-2xl md:text-4xl mb-8">Pytania o projekt domu i adaptację</h2>
         </div>
-      </section>
-
-      <!-- PLAIN-LANGUAGE GLOSSARY -->
-      <section class="mb-20" aria-labelledby="slownik-pojec">
-        <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-2">// BEZ PROJEKTOWEGO ŻARGONU</span>
-        <h2 id="slownik-pojec" class="font-heading font-bold text-2xl md:text-4xl mb-4">Słownik pojęć</h2>
-        <p class="font-sans text-gray-700 text-sm md:text-base leading-relaxed max-w-3xl mb-8">Te skróty pojawiają się przy planowaniu domu i przygotowaniu dokumentacji. Oto, co oznaczają w praktyce.</p>
-        <dl class="service-glossary">
-          <div><dt><abbr title="Projekt zagospodarowania działki lub terenu" class="font-mono text-lg font-bold text-accent">PZT</abbr></dt><dd><strong class="font-heading text-base">Projekt zagospodarowania działki lub terenu</strong><p class="font-sans text-sm text-gray-700 leading-relaxed mt-1">Pokazuje położenie budynku na działce i sposób zagospodarowania terenu.</p></dd></div>
-          <div><dt><abbr title="Projekt architektoniczno-budowlany" class="font-mono text-lg font-bold text-accent">PAB</abbr></dt><dd><strong class="font-heading text-base">Projekt architektoniczno-budowlany</strong><p class="font-sans text-sm text-gray-700 leading-relaxed mt-1">Opisuje formę budynku, jego funkcję oraz podstawowe rozwiązania architektoniczne.</p></dd></div>
-          <div><dt><abbr title="Projekt techniczny" class="font-mono text-lg font-bold text-accent">PT</abbr></dt><dd><strong class="font-heading text-base">Projekt techniczny</strong><p class="font-sans text-sm text-gray-700 leading-relaxed mt-1">Zawiera rozwiązania techniczne potrzebne do realizacji budynku, między innymi konstrukcyjne i instalacyjne.</p></dd></div>
-          <div><dt><abbr title="Miejscowy plan zagospodarowania przestrzennego" class="font-mono text-lg font-bold text-accent">MPZP</abbr></dt><dd><strong class="font-heading text-base">Miejscowy plan zagospodarowania przestrzennego</strong><p class="font-sans text-sm text-gray-700 leading-relaxed mt-1">Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</p></dd></div>
-          <div><dt><abbr title="Warunki zabudowy" class="font-mono text-lg font-bold text-accent">WZ</abbr></dt><dd><strong class="font-heading text-base">Decyzja o warunkach zabudowy</strong><p class="font-sans text-sm text-gray-700 leading-relaxed mt-1">Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</p></dd></div>
-          <div><dt class="font-mono text-sm font-bold text-accent">ADAPTACJA</dt><dd><strong class="font-heading text-base">Adaptacja projektu gotowego</strong><p class="font-sans text-sm text-gray-700 leading-relaxed mt-1">Dostosowanie wybranego projektu do warunków konkretnej działki i planowanej inwestycji.</p></dd></div>
-        </dl>
+        <div class="service-faq">
+          <details name="pytania-projekty">
+            <summary><span class="font-heading font-bold text-lg">Czy mogę zgłosić się bez gotowego projektu?</span></summary>
+            <p class="font-sans text-sm text-gray-700 leading-relaxed">Tak. Opisz działkę i dom, który chcesz zbudować. Podczas rozmowy ustalimy, czy lepiej zacząć od projektu indywidualnego, czy poszukać projektu gotowego.</p>
+          </details>
+          <details name="pytania-projekty">
+            <summary><span class="font-heading font-bold text-lg">Jakie dokumenty przydadzą się przy adaptacji?</span></summary>
+            <p class="font-sans text-sm text-gray-700 leading-relaxed">Prześlij link lub nazwę projektu gotowego, dane działki oraz posiadane dokumenty dotyczące <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-19" aria-expanded="false">MPZP</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-19"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span> albo <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-20" aria-expanded="false">WZ</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-20"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>. Po ich przejrzeniu wskażemy, co jeszcze będzie potrzebne.</p>
+          </details>
+          <details name="pytania-projekty">
+            <summary><span class="font-heading font-bold text-lg">Czy projekt gotowy pasuje do każdej działki?</span></summary>
+            <p class="font-sans text-sm text-gray-700 leading-relaxed">Nie zawsze. Znaczenie mają między innymi wymiary działki, dojazd i ustalenia <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-21" aria-expanded="false">MPZP</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-21"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span> lub <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-22" aria-expanded="false">WZ</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-22"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>. Dlatego warto sprawdzić projekt przed podjęciem dalszych decyzji.</p>
+          </details>
+          <details name="pytania-projekty">
+            <summary><span class="font-heading font-bold text-lg">Od czego zależy cena projektu lub adaptacji?</span></summary>
+            <p class="font-sans text-sm text-gray-700 leading-relaxed">Od zakresu dokumentacji, złożoności budynku, warunków działki oraz potrzebnych zmian. Wycenę przygotowujemy po poznaniu założeń i dostępnych dokumentów.</p>
+          </details>
+        </div>
       </section>
 
       <!-- DUAL ACTION CLOSING BANNER -->
@@ -646,6 +658,48 @@
           }
         });
       }
+
+      const termTips = document.querySelectorAll('.term-tip');
+      const closeTermTips = () => termTips.forEach(tip => {
+        tip.classList.remove('is-open');
+        tip.querySelector('button').setAttribute('aria-expanded', 'false');
+      });
+      termTips.forEach(tip => {
+        const button = tip.querySelector('button');
+        const bubble = tip.querySelector('.term-tip-bubble');
+        const open = () => {
+          closeTermTips();
+          tip.classList.add('is-open');
+          button.setAttribute('aria-expanded', 'true');
+          const trigger = button.getBoundingClientRect();
+          const width = bubble.getBoundingClientRect().width;
+          const height = bubble.getBoundingClientRect().height;
+          const left = Math.max(16, Math.min(trigger.left + trigger.width / 2 - width / 2, window.innerWidth - width - 16));
+          const below = trigger.bottom + 10;
+          const top = below + height > window.innerHeight - 12 ? trigger.top - height - 10 : below;
+          bubble.style.left = `${left}px`;
+          bubble.style.top = `${Math.max(12, top)}px`;
+        };
+        button.addEventListener('mouseenter', () => {
+          if (window.matchMedia('(hover: hover)').matches) open();
+        });
+        button.addEventListener('mouseleave', () => {
+          if (document.activeElement !== button) closeTermTips();
+        });
+        button.addEventListener('focus', open);
+        button.addEventListener('blur', closeTermTips);
+        button.addEventListener('click', () => open());
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') {
+          closeTermTips();
+          if (document.activeElement?.classList.contains('term-tip-trigger')) document.activeElement.blur();
+        }
+      });
+      document.addEventListener('pointerdown', event => {
+        if (!event.target.closest('.term-tip')) closeTermTips();
+      });
+      window.addEventListener('scroll', closeTermTips, { passive: true });
     });
   </script>
 </body>
