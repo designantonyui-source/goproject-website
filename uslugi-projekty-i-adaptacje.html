@@ -126,6 +126,20 @@
     #main-header.mobile-header-open #mobile-menu-btn {
       color: #ffffff !important;
     }
+    .service-hero { display: grid; grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+    .service-hero h1 { max-width: 15ch; line-height: 1.06; letter-spacing: -.045em; }
+    .service-hero-copy p { max-width: 39rem; }
+    .service-hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; }
+    .service-hero-actions > a:first-child { min-height: 3rem; padding: .875rem 1.5rem; }
+    .service-hero-image { position: relative; height: clamp(27rem, 43vw, 39rem); overflow: hidden; background: #e9e9e9; }
+    .service-hero-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .service-hero-image figcaption { position: absolute; right: 0; bottom: 0; left: 0; padding: 2.5rem 1.5rem 1.25rem; background: linear-gradient(transparent, rgb(0 0 0 / .75)); color: #fff; }
+    .service-hero-image figcaption a { display: inline-flex; align-items: center; gap: .5rem; border-bottom: 1px solid rgb(255 255 255 / .65); }
+    .service-hero-image figcaption a:hover, .service-hero-image figcaption a:focus-visible { color: #ff7a50; border-color: #ff7a50; }
+    .service-hero-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: clamp(2rem, 4vw, 3.5rem); border-top: 1px solid #d4d4d8; border-bottom: 1px solid #d4d4d8; }
+    .service-hero-facts li { min-width: 0; padding: 1.35rem 1rem 1.35rem 0; }
+    .service-hero-facts li + li { padding-left: 1.35rem; border-left: 1px solid #e4e4e7; }
+    .service-hero-facts li > strong { display: block; margin-top: .5rem; font: 700 1rem/1.4 'Space Grotesk', sans-serif; }
     .service-choice { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: #dcdcdc; border: 1px solid #dcdcdc; }
     .service-choice > div { min-width: 0; padding: clamp(1.5rem, 3vw, 2.5rem); background: #fff; }
     .service-choice > div:first-child { background: #0a0a0a; color: #fff; }
@@ -167,12 +181,22 @@
     .term-tip-bubble strong { display: block; margin-bottom: .35rem; font-weight: 700; }
     .term-tip-bubble span { display: block; color: #e4e4e7; }
     @media (max-width: 767px) {
+      .service-hero { grid-template-columns: 1fr; }
+      .service-hero h1 { max-width: 18ch; }
+      .service-hero-image { height: 22rem; }
+      .service-hero-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .service-hero-facts li { padding: 1rem .75rem 1rem 0; }
+      .service-hero-facts li + li { padding-left: 0; border-left: 0; }
+      .service-hero-facts li:nth-child(even) { padding-left: .75rem; border-left: 1px solid #e4e4e7; }
+      .service-hero-facts li:nth-child(n + 3) { border-top: 1px solid #e4e4e7; }
       .service-choice, .project-showcase { grid-template-columns: 1fr; }
       .service-steps { grid-template-columns: 1fr; border-top: 0; }
       .service-steps li, .service-steps li + li { border-left: 0; border-top: 1px solid #d4d4d8; padding: 1rem 0 1.5rem; }
       .service-steps .step-number { margin: 0 0 1rem; }
     }
     @media (min-width: 768px) and (max-width: 900px) {
+      .service-hero { grid-template-columns: 1fr; }
+      .service-hero-image { height: 30rem; }
       .service-choice { grid-template-columns: 1fr; }
     }
     @media (max-width: 900px) {
@@ -305,51 +329,38 @@
         <i data-lucide="arrow-left" class="w-4 h-4"></i> Wszystkie usługi
       </a>
 
-      <!-- HERO HEADER BLOCK -->
-      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16 pb-10 border-b border-gray-200">
-        <div class="max-w-4xl">
-          <div class="inline-block font-mono text-xs font-bold text-accent uppercase tracking-widest mb-3 bg-accent/10 border border-accent/30 px-3.5 py-1">
-            01 / PROJEKTY & ADAPTACJE // CHOJNICE, GDAŃSK & POMORSKIE
-          </div>
-          <h1 class="font-heading font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-            Projektowanie domów i adaptacja projektów gotowych w Chojnicach
-          </h1>
-          <p class="font-sans text-gray-700 text-base md:text-xl leading-relaxed">
-            Tworzymy indywidualne projekty domów i dopasowujemy projekty gotowe do konkretnej działki. Przy adaptacji uwzględniamy miejscowy plan zagospodarowania przestrzennego <span class="term-cluster">(<span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-1" aria-expanded="false">MPZP</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-1"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span>)</span> lub decyzję o warunkach zabudowy <span class="term-cluster">(<span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-2" aria-expanded="false">WZ</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-2"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>)</span>. Obsługujemy klientów z Chojnic, Gdańska i województwa pomorskiego.
-          </p>
-        </div>
-
-        <!-- SERVICE VALUE / SPECS CARD (REPLACES REDUNDANT PHONE BOX) -->
-        <div class="p-6 bg-studio-surface border border-gray-200 flex flex-col justify-between shrink-0 lg:w-80 shadow-sm">
-          <div>
-            <div class="font-mono text-[10px] font-bold text-accent uppercase tracking-widest mb-1.5">// PARAMETRY USŁUGI</div>
-            <div class="font-heading font-bold text-sm text-black mb-3">Projektowanie & Adaptacje</div>
-            
-            <div class="space-y-2.5 font-sans text-xs text-gray-600 border-t border-gray-200 pt-3">
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Zakres projektu:</span>
-                <span class="font-bold text-black"><span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-3" aria-expanded="false">PZT</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-3"><strong>Projekt zagospodarowania działki lub terenu</strong><span>Pokazuje położenie budynku na działce i sposób zagospodarowania terenu.</span></span></span> + <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-4" aria-expanded="false">PAB</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-4"><strong>Projekt architektoniczno-budowlany</strong><span>Opisuje formę budynku, jego funkcję oraz podstawowe rozwiązania architektoniczne.</span></span></span> + <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-5" aria-expanded="false">PT</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-5"><strong>Projekt techniczny</strong><span>Zawiera rozwiązania techniczne potrzebne do realizacji budynku, między innymi konstrukcyjne i instalacyjne.</span></span></span></span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Czas adaptacji:</span>
-                <span class="font-bold text-black">2 – 4 tygodnie</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Wizualizacje 3D:</span>
-                <span class="font-bold text-black">W cenie koncepcji</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Główny Projektant:</span>
-                <span class="font-bold text-black">mgr inż. Adam Kubat</span>
-              </div>
+      <!-- HERO -->
+      <section class="mb-16" aria-labelledby="service-hero-title">
+        <div class="service-hero">
+          <div class="service-hero-copy">
+            <div class="font-mono text-xs font-bold text-accent uppercase tracking-widest mb-5">01 / Projekty i adaptacje · Chojnice, Gdańsk, Pomorskie</div>
+            <h1 id="service-hero-title" class="font-heading font-extrabold text-4xl md:text-5xl xl:text-6xl mb-6">
+              Projekt domu i adaptacja projektu gotowego
+            </h1>
+            <p class="font-sans text-gray-700 text-base md:text-xl leading-relaxed mb-8">
+              Projektujemy domy od podstaw i adaptujemy projekty gotowe. Od pierwszej koncepcji po dokumentację pomagamy wybrać rozwiązanie dla Twojej działki.
+            </p>
+            <div class="service-hero-actions">
+              <a href="/kontakt" class="min-h-12 px-6 bg-black text-white hover:bg-accent font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center gap-2 transition-colors">
+                Omów swój projekt <span aria-hidden="true">↗</span>
+              </a>
+              <a href="/projekty" class="font-mono text-xs font-bold uppercase tracking-wider border-b border-accent pb-1 hover:text-accent transition-colors">
+                Zobacz projekty <span aria-hidden="true">↗</span>
+              </a>
             </div>
           </div>
-
-          <a href="/kontakt" class="h-[40px] px-4 bg-black text-white hover:bg-accent font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center gap-2 transition-all w-full mt-4">
-            <span>Wycena projektu w 24h &rarr;</span>
-          </a>
+          <figure class="service-hero-image">
+            <img src="/img/projects/nowoczesna-stodola/nowoczesna-stodola-elewacja-frontowa-perspektywa.jpg" alt="Nowoczesna stodoła — perspektywa frontowej elewacji domu zaprojektowanego przez GoProject" fetchpriority="high">
+            <figcaption><a href="/projekt-nowoczesna-stodola">Nowoczesna stodoła <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
         </div>
-      </div>
+        <ul class="service-hero-facts" aria-label="Zakres usługi">
+          <li><span class="font-mono text-[10px] font-bold uppercase tracking-widest text-gray-500">Dokumentacja</span><strong><span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-1" aria-expanded="false">PZT</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-1"><strong>Projekt zagospodarowania działki lub terenu</strong><span>Pokazuje położenie budynku na działce i sposób zagospodarowania terenu.</span></span></span> + <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-2" aria-expanded="false">PAB</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-2"><strong>Projekt architektoniczno-budowlany</strong><span>Opisuje formę budynku, jego funkcję oraz podstawowe rozwiązania architektoniczne.</span></span></span> + <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-3" aria-expanded="false">PT</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-3"><strong>Projekt techniczny</strong><span>Zawiera rozwiązania techniczne potrzebne do realizacji budynku, między innymi konstrukcyjne i instalacyjne.</span></span></span></strong></li>
+          <li><span class="font-mono text-[10px] font-bold uppercase tracking-widest text-gray-500">Adaptacja</span><strong>2–4 tygodnie</strong></li>
+          <li><span class="font-mono text-[10px] font-bold uppercase tracking-widest text-gray-500">Warunki działki</span><strong><span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-4" aria-expanded="false">MPZP</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-4"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span> lub <span class="term-tip"><button type="button" class="term-tip-trigger" aria-describedby="term-tooltip-5" aria-expanded="false">WZ</button><span class="term-tip-bubble" role="tooltip" id="term-tooltip-5"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span></strong></li>
+          <li><span class="font-mono text-[10px] font-bold uppercase tracking-widest text-gray-500">Koncepcja</span><strong>Wizualizacje 3D</strong></li>
+        </ul>
+      </section>
 
       <!-- SUB-SERVICES BREAKDOWN -->
       <div class="mb-20">
