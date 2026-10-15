@@ -10,7 +10,7 @@
   let started = false;
   let panel;
   let settings;
-  const showSettings = /^\/polityka-prywatnosci(?:\.html)?\/?$/.test(location.pathname);
+  const showSettings = true;
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
   window.gtag('consent', 'default', {
@@ -82,7 +82,8 @@
       .analytics-choice-actions{display:flex;gap:10px}
       .analytics-choice button{flex:1;padding:11px 12px;border:1px solid currentColor;background:transparent;color:inherit;font:inherit;font-size:13px;font-weight:600;line-height:1.35;cursor:pointer;border-radius:4px}
       .analytics-choice button:focus-visible,.analytics-settings:focus-visible{outline:3px solid #2563eb;outline-offset:3px}
-      .analytics-settings{position:static;margin:12px 0 0;padding:0;border:0;background:transparent;color:inherit;font:inherit;font-size:12px;line-height:1.4;text-decoration:underline;cursor:pointer}
+      .analytics-settings{display:inline-flex;align-items:center;margin:0;padding:0;border:0;background:transparent;color:inherit;font:inherit;line-height:inherit;text-decoration:none;cursor:pointer;transition:color .2s ease}
+      .analytics-settings:hover{color:#d1d5db}
       @media(max-width:480px){.analytics-choice{left:12px;bottom:12px;width:calc(100vw - 24px);padding:20px}.analytics-choice-actions{flex-direction:column}}
     `;
     document.head.appendChild(style);
@@ -112,7 +113,14 @@
       settings.hidden = true;
       panel.querySelector('button').focus({ preventScroll: true });
     });
-    if (showSettings) (document.querySelector('main') || document.body).appendChild(settings);
+    const footer = document.querySelector('footer');
+    const privacyLink = footer && footer.querySelector('a[href="/polityka-prywatnosci"]');
+    if (privacyLink && privacyLink.parentElement) {
+      privacyLink.parentElement.appendChild(settings);
+    } else if (showSettings) {
+      // Keep the control hidden if the page has no footer legal-links row.
+      settings.hidden = true;
+    }
     document.addEventListener('click', event => {
       if (!accepted) return;
       const link = event.target.closest && event.target.closest('a[href]');

@@ -16,11 +16,27 @@
   img {
     image-rendering: auto;
   }
-  i[data-lucide] {
-    display: inline-block;
-    vertical-align: middle;
-  }
 }
+
+/* One square-edged icon family across the site. */
+.ms-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  font: normal 400 20px/1 'Material Symbols Sharp';
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+.ms-icon--small { width: 16px; height: 16px; font-size: 16px; }
+.ms-icon--medium { width: 20px; height: 20px; font-size: 20px; }
+.ms-icon--large { width: 24px; height: 24px; font-size: 24px; }
 
 /* Logo Display Switching Rules */
 #header-logo img,
