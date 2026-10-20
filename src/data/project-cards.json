@@ -1,0 +1,26 @@
+{
+  "uslugi-projekty-i-adaptacje.html": [
+    {
+      "href": "/projekt-dom-jednorodzinny-chojnice",
+      "image_attributes": "src=\"/img/projects/dom-jednorodzinny-chojnice/dom-jednorodzinny-chojnice-strefa-wejsciowa-i-wnetrze-600w.jpg\" srcset=\"/img/projects/dom-jednorodzinny-chojnice/dom-jednorodzinny-chojnice-strefa-wejsciowa-i-wnetrze-600w.jpg 600w, /img/projects/dom-jednorodzinny-chojnice/dom-jednorodzinny-chojnice-strefa-wejsciowa-i-wnetrze-1600w.jpg 1600w\" sizes=\"(min-width: 768px) 50vw, 100vw\" width=\"600\" height=\"340\" loading=\"lazy\" alt=\"Wizualizacja strefy wejściowej i wnętrza domu jednorodzinnego w Chojnicach\"",
+      "title": "Dom jednorodzinny w Chojnicach"
+    },
+    {
+      "href": "/projekt-dom-parterowy-z-garazem",
+      "image_attributes": "src=\"/img/projects/dom-parterowy-z-garazem/dom-parterowy-z-garazem-elewacja-boczna-ogrod.jpg\" width=\"1200\" height=\"896\" loading=\"lazy\" alt=\"Wizualizacja bocznej elewacji i ogrodu domu parterowego z garażem\"",
+      "title": "Dom parterowy z garażem"
+    }
+  ],
+  "uslugi-nadzor-i-kierownik-budowy.html": [
+    {
+      "href": "/projekt-dom-jednorodzinny-chojnice",
+      "image_attributes": "src=\"/img/projects/dom-jednorodzinny-chojnice/dom-jednorodzinny-chojnice-elewacja-frontowa-hero-1920w.jpg\" alt=\"Wizualizacja frontowej elewacji projektu domu jednorodzinnego w Chojnicach\" loading=\"lazy\" width=\"600\" height=\"375\"",
+      "title": "Dom jednorodzinny w Chojnicach"
+    },
+    {
+      "href": "/projekt-nowoczesna-stodola",
+      "image_attributes": "src=\"/img/projects/nowoczesna-stodola/nowoczesna-stodola-elewacja-frontowa-perspektywa.jpg\" alt=\"Wizualizacja projektu domu w formie nowoczesnej stodoły\" loading=\"lazy\" width=\"1200\" height=\"750\"",
+      "title": "Nowoczesna stodoła"
+    }
+  ]
+}

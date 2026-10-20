@@ -1,0 +1,160 @@
+{
+  "index.html": {
+    "title": "Najczęściej zadawane pytania",
+    "label": "05 // FAQ",
+    "section_id": "faq",
+    "heading_id": "home-faq-title",
+    "classes": "scroll-mt-24 md:scroll-mt-28 py-24 bg-white text-black border-t border-gray-200",
+    "inner": "max-w-[1200px] mx-auto px-4 md:px-10",
+    "items": [
+      {
+        "question": "Ile kosztuje projekt budowlany domu jednorodzinnego?",
+        "answer": "Koszt zależy od wielkości domu, stopnia skomplikowania konstrukcji i uwarunkowań terenu. Po bezpłatnej\n            konsultacji przygotowuję wycenę w ciągu 24 h."
+      },
+      {
+        "question": "Czy projekt gotowy trzeba adaptować do działki?",
+        "answer": "Tak. Adaptacja jest wymagana prawnie, aby projekt katalogowy był zgodny z miejscowym planem (MPZP) lub\n            warunkami zabudowy (WZ) oraz warunkami gruntowymi."
+      },
+      {
+        "question": "Ile trwa uzyskanie pozwolenia na budowę?",
+        "answer": "Urząd ma ustawowo 65 dni na wydanie decyzji od złożenia kompletnego wniosku. Wszystkimi formalnościami\n            zajmuję się za Ciebie."
+      },
+      {
+        "question": "Czym różni się kierownik budowy od inspektora nadzoru?",
+        "answer": "Kierownik budowy odpowiada za prowadzenie robót zgodnie z projektem i przepisami prawa budowlanego.\n            Inspektor nadzoru inwestorskiego reprezentuje wyłącznie Ciebie i kontroluje jakość oraz rozliczenia\n            wykonawców."
+      },
+      {
+        "question": "Dlaczego warto powierzyć projekt i kierownictwo budowy jednej osobie?",
+        "answer": "Eliminuje to częsty problem przerzucania odpowiedzialności między biurem projektowym a budową. Jako autor\n            projektu znam każdy detal techniczny — szybko rozwiewam wątpliwości wykonawców, ograniczam przestoje\n            i dbam o pełną zgodność realizacji z dokumentacją."
+      }
+    ]
+  },
+  "uslugi-projekty-i-adaptacje.html": {
+    "title": "Pytania o projekt domu i adaptację",
+    "label": "// PRZED ROZPOCZĘCIEM",
+    "section_id": "faq-usluga",
+    "heading_id": "pytania-projekty",
+    "classes": "mb-20",
+    "inner": "max-w-[1200px] mx-auto px-4 md:px-10",
+    "items": [
+      {
+        "question": "Czy mogę zgłosić się bez gotowego projektu?",
+        "answer": "Tak. Opisz działkę i dom, który chcesz zbudować. Podczas rozmowy ustalimy, czy lepiej zacząć od projektu indywidualnego, czy poszukać projektu gotowego."
+      },
+      {
+        "question": "Jakie dokumenty przydadzą się przy adaptacji?",
+        "answer": "Prześlij link lub nazwę projektu gotowego, dane działki oraz posiadane dokumenty dotyczące <span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-19\" aria-expanded=\"false\">MPZP</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-19\"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span> albo <span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-20\" aria-expanded=\"false\">WZ</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-20\"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>. Po ich przejrzeniu wskażemy, co jeszcze będzie potrzebne."
+      },
+      {
+        "question": "Czy projekt gotowy pasuje do każdej działki?",
+        "answer": "Nie zawsze. Znaczenie mają między innymi wymiary działki, dojazd i ustalenia <span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-21\" aria-expanded=\"false\">MPZP</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-21\"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span> lub <span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-22\" aria-expanded=\"false\">WZ</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-22\"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>. Dlatego warto sprawdzić projekt przed podjęciem dalszych decyzji."
+      },
+      {
+        "question": "Od czego zależy cena projektu lub adaptacji?",
+        "answer": "Od zakresu dokumentacji, złożoności budynku, warunków działki oraz potrzebnych zmian. Wycenę przygotowujemy po poznaniu założeń i dostępnych dokumentów."
+      }
+    ]
+  },
+  "uslugi-nadzor-i-kierownik-budowy.html": {
+    "title": "Pytania o kierownika budowy i nadzór",
+    "label": "// PYTANIA PRZED STARTEM",
+    "section_id": "faq-usluga",
+    "heading_id": "faq-title",
+    "classes": "mb-20",
+    "inner": "max-w-[1200px] mx-auto px-4 md:px-10",
+    "items": [
+      {
+        "question": "Ile kosztuje kierownik budowy lub nadzór inwestorski?",
+        "answer": "Wycenę przygotowujemy dla konkretnej inwestycji. Uwzględniamy rodzaj i wielkość budynku, lokalizację, etap robót, zakres usługi oraz planowane wizyty. Podaj miejscowość i termin, abyśmy mogli sprawdzić dostępność i omówić warunki."
+      },
+      {
+        "question": "Czy kierownik budowy może być też inspektorem nadzoru?",
+        "answer": "Nie na tej samej budowie. Są to odrębne funkcje, które muszą pełnić różne osoby. Jeżeli masz już kierownika budowy, możesz rozważyć niezależny nadzór inwestorski."
+      },
+      {
+        "question": "Jak często inżynier przyjeżdża na budowę?",
+        "answer": "Terminy i zasady wizyt ustalamy według harmonogramu robót oraz objętej funkcji. Szczególnie ważne są kontrole przed betonowaniem i zakryciem elementów. Nie zakładamy stałej obecności inżyniera ani tej samej liczby wizyt dla wszystkich budów."
+      },
+      {
+        "question": "Czy możecie pomóc, gdy budowa już trwa?",
+        "answer": "Skontaktuj się z nami i opisz etap prac, istniejącą dokumentację oraz powód zgłoszenia. Po zapoznaniu się z sytuacją ustalimy możliwość współpracy. Przy zmianie kierownika trzeba także uporządkować formalne przejęcie obowiązków."
+      },
+      {
+        "question": "Czy obsługujecie Gdańsk i inne miejscowości na Pomorzu?",
+        "answer": "Tak, obszar usług obejmuje Chojnice, Gdańsk i województwo pomorskie. Możliwość dojazdu oraz terminy wizyt potwierdzamy dla konkretnej lokalizacji i harmonogramu budowy."
+      },
+      {
+        "question": "Czy odbiór mieszkania od dewelopera to ta sama usługa?",
+        "answer": "Odbiór mieszkania lub domu od dewelopera ma inny zakres niż prowadzenie budowy lub nadzór inwestorski. Jeśli potrzebujesz sprawdzenia lokalu przed przekazaniem, zobacz <a href=\"/uslugi-odbiory-i-ekspertyzy\" class=\"underline hover:text-accent\">odbiory mieszkań, domów i ekspertyzy</a>."
+      }
+    ]
+  },
+  "uslugi-odbiory-i-ekspertyzy.html": {
+    "title": "Pytania o odbiory i ekspertyzy",
+    "label": "// PYTANIA PRZED ODBIOREM",
+    "section_id": "faq-usluga",
+    "heading_id": "inspection-faq-title",
+    "classes": "mb-20",
+    "inner": "max-w-[1200px] mx-auto px-4 md:px-10",
+    "items": [
+      {
+        "question": "Ile kosztuje odbiór mieszkania lub domu?",
+        "answer": "Podaj miejscowość, powierzchnię nieruchomości i zakres pomocy. Na tej podstawie omówimy cenę oraz termin. Badanie termowizyjne, ekspertyzę i ponowną wizytę wyceniamy odpowiednio do potrzeb — nie zakładamy, że są częścią każdego odbioru."
+      },
+      {
+        "question": "Ile czasu zajmuje kontrola?",
+        "answer": "Zależy to od wielkości lokalu, jego stanu, dostępności pomieszczeń i zakresu sprawdzenia. Przewidywany czas uzgadniamy przed wizytą, aby można było zarezerwować odpowiedni termin u dewelopera."
+      },
+      {
+        "question": "Czy termowizja jest przydatna przy każdym odbiorze?",
+        "answer": "Nie zawsze. Obraz termiczny pokazuje temperaturę powierzchni, a jego interpretacja zależy m.in. od warunków pogodowych, ogrzewania i rodzaju materiału. Przed wizytą ustalamy, czy badanie pomoże w ocenie zgłoszonego problemu i czy warunki pozwalają je wykonać."
+      },
+      {
+        "question": "Czy odbiór wykryje wszystkie wady budynku?",
+        "answer": "Kontrola dotyczy uzgodnionego zakresu i dostępnych elementów. Nie daje gwarancji wykrycia wad ukrytych w konstrukcji lub pod wykończeniem. Jeśli zauważymy problem wymagający dodatkowych badań, omówimy dalszą diagnostykę."
+      },
+      {
+        "question": "Kiedy potrzebuję ekspertyzy zamiast odbioru?",
+        "answer": "Gdy chodzi o przyczynę konkretnego problemu, np. pęknięć, odkształceń lub uszkodzeń istniejącego budynku. Opisz sytuację przy zgłoszeniu. Ustalimy, czy potrzebna jest ekspertyza, dodatkowe badania czy inny rodzaj kontroli."
+      },
+      {
+        "question": "Czy sprawdzacie mieszkania także w Gdańsku?",
+        "answer": "Tak, usługi obejmują Chojnice, Gdańsk i województwo pomorskie. Dostępność potwierdzamy dla wskazanej miejscowości i terminu. Jeśli potrzebujesz kontroli robót podczas trwającej budowy, zobacz <a href=\"/uslugi-nadzor-i-kierownik-budowy\" class=\"underline hover:text-accent\">kierownika budowy i nadzór inwestorski</a>."
+      }
+    ]
+  },
+  "uslugi-formalnosci-i-energetyka.html": {
+    "title": "Pytania o formalności i energetykę",
+    "label": "// PYTANIA PRZED ZLECENIEM",
+    "section_id": "faq-usluga",
+    "heading_id": "formal-faq-title",
+    "classes": "mb-20",
+    "inner": "max-w-[1200px] mx-auto px-4 md:px-10",
+    "items": [
+      {
+        "question": "Czy dla każdej działki potrzebne są warunki zabudowy?",
+        "answer": "Nie. Najpierw trzeba sprawdzić ustalenia planistyczne i rodzaj planowanej inwestycji. Podaj numer działki, obręb i gminę — omówimy właściwą ścieżkę. Jeśli masz już ustalenia dla działki, zobacz również <a href=\"/uslugi-projekty-i-adaptacje\" class=\"underline hover:text-accent\">projekty domów i adaptacje</a>."
+      },
+      {
+        "question": "Czym różni się świadectwo energetyczne od audytu?",
+        "answer": "Świadectwo określa charakterystykę energetyczną budynku lub lokalu. Audyt analizuje możliwości poprawy efektywności i zakres modernizacji. Dokumenty nie są zamienne; dobieramy je do celu oraz wymagań konkretnej sprawy."
+      },
+      {
+        "question": "Ile kosztuje przygotowanie dokumentacji?",
+        "answer": "Cena zależy od rodzaju opracowania, wielkości i złożoności nieruchomości oraz kompletności danych. Dodatkowe pomiary, dojazdy i obsługę urzędową ustalamy osobno. Podaj cel zlecenia i lokalizację, aby omówić wycenę."
+      },
+      {
+        "question": "Jak długo trwa przygotowanie dokumentów?",
+        "answer": "Termin naszej pracy potwierdzamy po sprawdzeniu zakresu i dostępnych danych. Nie zakładamy jednego terminu 24–48 godzin dla wszystkich zleceń. Przy WZ osobno należy uwzględnić postępowanie urzędowe, uzgodnienia i ewentualne uzupełnienia."
+      },
+      {
+        "question": "Co jeśli nie mam projektu lub pełnych danych budynku?",
+        "answer": "Przekaż dokumenty, które posiadasz, i opisz stan nieruchomości. Wskażemy brakujące informacje oraz możliwość ich uzupełnienia. Przed potwierdzeniem zakresu ustalimy, czy potrzebne są oględziny, pomiary lub dodatkowa dokumentacja."
+      },
+      {
+        "question": "Czy pomagacie przy dokumentach do programu Czyste Powietrze?",
+        "answer": "Możemy omówić zakres dokumentacji energetycznej dla planowanej modernizacji. Przed zleceniem trzeba sprawdzić aktualne zasady programu, wymagania dotyczące opracowań i osób je sporządzających. Przygotowanie dokumentu nie jest gwarancją przyznania dofinansowania."
+      }
+    ]
+  }
+}

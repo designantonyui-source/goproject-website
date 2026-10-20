@@ -1,0 +1,63 @@
+/* Shared offer-page hero, based on the projects and adaptations page. */
+.service-hero {
+  display: grid;
+  grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+.service-hero-copy { min-width: 0; }
+.service-hero h1 {
+  max-width: 15ch;
+  line-height: 1.06;
+  letter-spacing: -.045em;
+}
+.service-hero-copy p { max-width: 39rem; }
+.service-hero-scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #d4d4d8;
+  color: #52525b;
+}
+.service-hero-scroll:hover { color: #ff3b00; }
+.service-hero-scroll:focus-visible {
+  outline: 2px solid #ff3b00;
+  outline-offset: 6px;
+}
+.service-hero-scroll > .ms-icon { flex: none; }
+.service-hero-image {
+  position: relative;
+  min-width: 0;
+  height: clamp(27rem, 43vw, 39rem);
+  overflow: hidden;
+  background: #e9e9e9;
+}
+.service-hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service-hero-image figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2.5rem 1.5rem 1.25rem;
+  background: linear-gradient(transparent, rgb(0 0 0 / .75));
+  color: #fff;
+}
+#zakres-uslugi { scroll-margin-top: 7rem; }
+@media (max-width: 900px) {
+  .service-hero { grid-template-columns: 1fr; }
+  .service-hero h1 { max-width: 20ch; }
+  .service-hero-image { height: 30rem; }
+}
+@media (max-width: 767px) {
+  .service-hero h1 { max-width: 18ch; }
+  .service-hero-image { height: 22rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.scroll-smooth { scroll-behavior: auto; }
+}

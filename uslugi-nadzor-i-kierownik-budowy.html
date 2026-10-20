@@ -8,9 +8,9 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" sizes="any" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
   <link rel="manifest" href="/site.webmanifest" />
-  <title>Kierownik budowy i nadzór inwestorski | Chojnice — GoProject</title>
+  <title>Kierownik budowy i nadzór | Chojnice, Gdańsk — GoProject</title>
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="description" content="Kierownik budowy i niezależny nadzór inwestorski w Chojnicach, Gdańsku i woj. pomorskim. Dziennik budowy, kontrola robót i odbiory etapów prac." />
+  <meta name="description" content="Kierownik budowy i nadzór inwestorski w Chojnicach, Gdańsku i na Pomorzu. Poznaj zakres usług, etapy kontroli i zasady współpracy. Zapytaj o termin." />
   <!-- Preload custom fonts to help avoid FOUT (Flash of unstyled text) -->
   <link rel="preload" href="./fonts/plus-jakarta-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/plus-jakarta-sans-400-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
@@ -24,14 +24,17 @@
   <link rel="preload" href="./fonts/space-grotesk-700-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.min.css?v=sharp-20261013" />
+  <link rel="stylesheet" href="/css/service-hero.css?v=20261015" />
+  <link rel="stylesheet" href="/css/service-cta.css?v=20261015" />
+  <link rel="stylesheet" href="/css/service-navigation.css?v=20261015" />
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp&amp;icon_names=arrow_back,arrow_downward,arrow_forward,assignment_turned_in,calculate,calendar_month,call,check,check_circle,chevron_left,chevron_right,close,crop_free,description,explore,grid_view,home,keyboard_arrow_down,layers,location_on,mail,menu,north_east,schedule,send,task,verified_user,zoom_in&amp;display=block" />
   <link rel="canonical" href="https://goproject.com.pl/uslugi-nadzor-i-kierownik-budowy" />
   <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://goproject.com.pl/uslugi-nadzor-i-kierownik-budowy" />
-  <meta property="og:title" content="Kierownik budowy i nadzór inwestorski | Chojnice — GoProject" />
-  <meta property="og:description" content="Kierownik budowy i niezależny nadzór inwestorski w Chojnicach, Gdańsku i woj. pomorskim. Dziennik budowy, kontrola robót i odbiory etapów prac." />
+  <meta property="og:title" content="Kierownik budowy i nadzór | Chojnice, Gdańsk — GoProject" />
+  <meta property="og:description" content="Kierownik budowy i nadzór inwestorski w Chojnicach, Gdańsku i na Pomorzu. Poznaj zakres usług, etapy kontroli i zasady współpracy. Zapytaj o termin." />
   <meta property="og:image" content="https://goproject.com.pl/img/og-image.jpg" />
   <meta property="og:image:secure_url" content="https://goproject.com.pl/img/og-image.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
@@ -43,8 +46,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Kierownik budowy i nadzór inwestorski | Chojnice — GoProject" />
-  <meta name="twitter:description" content="Kierownik budowy i niezależny nadzór inwestorski w Chojnicach, Gdańsku i woj. pomorskim. Dziennik budowy, kontrola robót i odbiory etapów prac." />
+  <meta name="twitter:title" content="Kierownik budowy i nadzór | Chojnice, Gdańsk — GoProject" />
+  <meta name="twitter:description" content="Kierownik budowy i nadzór inwestorski w Chojnicach, Gdańsku i na Pomorzu. Poznaj zakres usług, etapy kontroli i zasady współpracy. Zapytaj o termin." />
   <meta name="twitter:image" content="https://goproject.com.pl/img/og-image.jpg" />
   <meta name="twitter:image:alt" content="GoProject Pracownia Projektowa — Nowoczesne projekty domów" />
 
@@ -63,7 +66,7 @@
           "url": "https://goproject.com.pl"
         },
         "areaServed": ["Gdańsk", "Chojnice", "Województwo Pomorskie"],
-        "description": "Kierownik budowy i niezależny nadzór inwestorski w Chojnicach, Gdańsku i woj. pomorskim. Dziennik budowy, kontrola robót i odbiory etapów prac."
+        "description": "Kierownik budowy i nadzór inwestorski w Chojnicach, Gdańsku i na Pomorzu. Poznaj zakres usług, etapy kontroli i zasady współpracy. Zapytaj o termin."
       },
       {
         "@type": "BreadcrumbList",
@@ -125,6 +128,10 @@
     }
   </style>
   <script defer src="/js/analytics.js" data-measurement-id="G-38PL1XHPN5" data-privacy-url="/polityka-prywatnosci.html"></script>
+  <script defer src="/js/service-navigation.js?v=20261015"></script>
+  <link rel="stylesheet" href="/css/shared-faq.css?v=20261015-2" />
+  <script defer src="/js/shared-faq.js?v=20261015-2"></script>
+  <link rel="stylesheet" href="/css/service-content.css?v=20261015-2" />
 </head>
 <body class="bg-white text-black font-sans antialiased selection:bg-accent selection:text-white">
   <!-- HEADER -->
@@ -196,7 +203,7 @@
         <div class="border-b border-zinc-800/80 pb-4">
           <button id="mobile-oferta-toggle" class="w-full flex items-center justify-between font-bold text-accent py-2 text-base">
             <span>// OFERTA USŁUG</span>
-            <span id="mobile-oferta-arrow" class="ms-icon ms-icon--small transition-transform duration-200 rotate-180" aria-hidden="true">keyboard_arrow_down</span>
+            <span id="mobile-oferta-arrow" class="ms-icon ms-icon--medium transition-transform duration-200 rotate-180" aria-hidden="true">keyboard_arrow_down</span>
           </button>
           <div id="mobile-oferta-submenu" class="pl-4 pt-3 space-y-2 text-sm sm:text-base border-l-2 border-accent/60 ml-1 mt-2">
             <a href="/uslugi-projekty-i-adaptacje" class="block py-2.5 text-zinc-200 font-medium hover:text-accent transition-colors">01 / Projekty budowlane & adaptacje</a>
@@ -210,22 +217,22 @@
         <div class="space-y-1 font-mono text-base font-medium uppercase tracking-wider">
           <a href="/o-nas" class="py-3 border-b border-zinc-800/80 text-zinc-200 hover:text-accent transition-colors flex items-center justify-between">
             <span>O pracowni</span>
-            <span class="ms-icon ms-icon--small text-zinc-500" aria-hidden="true">north_east</span>
+            <span class="ms-icon ms-icon--medium text-zinc-500" aria-hidden="true">north_east</span>
           </a>
           <a href="/projekty" class="py-3 border-b border-zinc-800/80 text-zinc-200 hover:text-accent transition-colors flex items-center justify-between">
             <span>Portfolio Projektów</span>
-            <span class="ms-icon ms-icon--small text-zinc-500" aria-hidden="true">north_east</span>
+            <span class="ms-icon ms-icon--medium text-zinc-500" aria-hidden="true">north_east</span>
           </a>
           <a href="/kontakt" class="py-3 border-b border-zinc-800/80 text-zinc-200 hover:text-accent transition-colors flex items-center justify-between">
             <span>Kontakt</span>
-            <span class="ms-icon ms-icon--small text-zinc-500" aria-hidden="true">north_east</span>
+            <span class="ms-icon ms-icon--medium text-zinc-500" aria-hidden="true">north_east</span>
           </a>
         </div>
 
         <!-- QUICK CONTACT & CTA -->
         <div class="pt-4 space-y-3">
           <a href="tel:+48884757815" class="w-full h-12 bg-zinc-900 border border-zinc-800 hover:border-accent text-white font-mono text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2.5 transition-all">
-            <span class="ms-icon ms-icon--small text-accent" aria-hidden="true">call</span>
+            <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">call</span>
             <span>Zadzwoń: +48 884 757 815</span>
           </a>
         </div>
@@ -239,102 +246,225 @@
       </div>
     </div>
 
-  <div class="pt-28 md:pt-32 pb-24 bg-white text-black min-h-screen">
+  <main class="pt-28 md:pt-32 pb-24 bg-white text-black min-h-screen" id="main-content">
     <div class="max-w-[1600px] mx-auto px-4 md:px-10">
       <a href="/uslugi" class="inline-flex items-center gap-2 font-mono text-xs font-bold text-gray-500 hover:text-black uppercase tracking-wider mb-8 transition-colors">
-        <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_back</span> Wszystkie usługi
+        <span class="ms-icon ms-icon--medium" aria-hidden="true">arrow_back</span> Wszystkie usługi
       </a>
 
-      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16 pb-10 border-b border-gray-200">
-        <div class="max-w-4xl">
-          <div class="inline-block font-mono text-xs font-bold text-accent uppercase tracking-widest mb-3 bg-accent/10 border border-accent/30 px-3.5 py-1">
-            02 / NADZÓR & KIEROWNIK // CHOJNICE, GDAŃSK & POMORSKIE
+      <section class="mb-16" aria-labelledby="service-hero-title">
+        <div class="service-hero">
+          <div class="service-hero-copy">
+            <div class="font-mono text-xs font-bold text-accent uppercase tracking-widest mb-5">02 / Kierownik budowy i nadzór · Chojnice, Gdańsk, Pomorskie</div>
+            <h1 id="service-hero-title" class="font-heading font-extrabold text-4xl md:text-5xl xl:text-6xl mb-6">Kierownik budowy i nadzór inwestorski</h1>
+            <p class="font-sans text-gray-700 text-base md:text-xl leading-relaxed mb-8">Prowadzimy budowy i niezależnie kontrolujemy prace wykonawców. Ustalamy rolę inżyniera, etapy kontroli i zasady współpracy dla Twojej inwestycji.</p>
+            <a href="#zakres-uslugi" class="service-hero-scroll font-mono text-xs font-bold uppercase tracking-wider">
+              <span class="ms-icon ms-icon--medium" aria-hidden="true">arrow_downward</span>
+              <span>Poniżej: zakres i przebieg współpracy</span>
+            </a>
           </div>
-          <h1 class="font-heading font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-            Kierownik budowy i nadzór inwestorski w Chojnicach
-          </h1>
-          <p class="font-sans text-gray-700 text-base md:text-xl leading-relaxed">
-            GoProject oferuje usługę kierownika budowy oraz niezależny nadzór inwestorski w Chojnicach, Gdańsku i województwie pomorskim. W zależności od zakresu współpracy prace obejmują kontrolę robót budowlanych, prowadzenie dziennika budowy oraz odbiory wskazanych etapów.
-          </p>
+          <figure class="service-hero-image">
+            <img src="/img/projects/osiedle-budynkow-dwulokalowych/06-perspektywa-narozna-master.jpg" alt="Wizualizacja projektu osiedla budynków dwulokalowych GoProject — perspektywa narożna" fetchpriority="high">
+            <figcaption>Budynki dwulokalowe · Wizualizacja GoProject</figcaption>
+          </figure>
         </div>
+      </section>
 
-        <!-- SERVICE VALUE / SPECS CARD (REPLACES REDUNDANT PHONE BOX) -->
-        <div class="p-6 bg-studio-surface border border-gray-200 flex flex-col justify-between shrink-0 lg:w-80 shadow-sm">
+      <section class="mb-20" aria-labelledby="role-title" id="zakres-uslugi">
+        <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// WYBIERZ ZAKRES WSPÓŁPRACY</span>
+        <h2 id="role-title" class="font-heading font-bold text-3xl md:text-4xl mb-8">Kierownik budowy a inspektor nadzoru — czym się różnią?</h2>
+        <div class="service-choice">
           <div>
-            <div class="font-mono text-[10px] font-bold text-accent uppercase tracking-widest mb-1.5">// PARAMETRY USŁUGI</div>
-            <div class="font-heading font-bold text-sm text-black mb-3">Kierownik Budowy & Nadzór</div>
-            
-            <div class="space-y-2.5 font-sans text-xs text-gray-600 border-t border-gray-200 pt-3">
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Uprawnienia:</span>
-                <span class="font-bold text-black">Bez ograniczeń</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Dziennik budowy:</span>
-                <span class="font-bold text-black">Tradycyjny & EDB</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Kontrole zbrojenia:</span>
-                <span class="font-bold text-black">100% osobiste</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Inżynier prowadzący:</span>
-                <span class="font-bold text-black">mgr inż. Adam Kubat</span>
-              </div>
-            </div>
+            <h3 class="font-heading font-bold text-2xl mb-4">Kierownik budowy</h3>
+            <p class="font-sans text-sm leading-relaxed mb-4">Odpowiada za organizację i bezpieczne prowadzenie robót zgodnie z dokumentacją. Prowadzi dziennik budowy, sprawdza etapy prac i przygotowuje dokumenty należące do jego obowiązków przy zakończeniu budowy.</p>
+            <p class="font-sans text-sm leading-relaxed">To zakres dla inwestora, który potrzebuje osoby do formalnego objęcia i prowadzenia budowy.</p>
           </div>
+          <div>
+            <h3 class="font-heading font-bold text-2xl mb-4">Inspektor nadzoru inwestorskiego</h3>
+            <p class="font-sans text-sm text-gray-600 leading-relaxed mb-4">Reprezentuje inwestora i niezależnie ocenia wykonane roboty. Sprawdza ich zgodność z projektem, jakość i poprawność usunięcia usterek w granicach swoich uprawnień.</p>
+            <p class="font-sans text-sm text-gray-600 leading-relaxed">To zakres dla inwestora, który chce dodatkowej kontroli, gdy budowę prowadzi już kierownik.</p>
+          </div>
+        </div>
+        <p class="font-sans text-sm text-gray-600 leading-relaxed mt-4">Na jednej budowie te funkcje pełnią różne osoby. Kierownik budowy nie może jednocześnie być inspektorem nadzoru inwestorskiego. Zakres nadzoru dopasowujemy do rodzaju robót i wymaganych specjalności.</p>
+      </section>
 
-          <a href="/kontakt" class="h-[40px] px-4 bg-black text-white hover:bg-accent font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center gap-2 transition-all w-full mt-4">
-            <span>Zapytaj o wolny termin <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_forward</span></span>
-          </a>
-        </div>
-      </div>
+      <section class="mb-20" aria-labelledby="scope-title">
+        <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// OD STARTU DO ZAKOŃCZENIA</span>
+        <h2 id="scope-title" class="font-heading font-bold text-3xl md:text-4xl mb-8">Co obejmuje współpraca?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <!-- service-options:start -->
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">01</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Dokumentacja i plan kontroli</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Omawiamy projekt, aktualny etap budowy i harmonogram wykonawcy. Ustalamy zadania inżyniera i momenty wymagające wizyty.</p>
+</div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">01</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Obowiązki Kierownika Budowy</h3>
-          <p class="font-sans text-xs text-gray-600">Pełna odpowiedzialność prawna i prowadzenie Dziennika Budowy.</p>
-        </div>
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">02</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Niezależny Nadzór Inwestorski</h3>
-          <p class="font-sans text-xs text-gray-600">Ochrona budżetu i weryfikacja wykonawców w imieniu Inwestora.</p>
-        </div>
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">03</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Odbiory prac zanikających</h3>
-          <p class="font-sans text-xs text-gray-600">Kontrola wykopów, zbrojenia fundamentów, stropów i więźby.</p>
-        </div>
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">04</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Odbiór końcowy budynku</h3>
-          <p class="font-sans text-xs text-gray-600">Kompletowanie dokumentacji technicznej do zawiadomienia o zakończeniu.</p>
-        </div>
-      </div>
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">02</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Kontrola przed zakryciem</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Sprawdzamy wskazane etapy, np. zbrojenie przed betonowaniem lub izolacje przed zasypaniem. Termin kontroli trzeba uzgodnić przed wykonaniem kolejnych prac.</p>
+</div>
 
-      <!-- DUAL ACTION CLOSING BANNER -->
-      <div class="bg-black text-white p-10 md:p-14 text-center border border-zinc-800 shadow-2xl">
-        <span class="font-mono text-[11px] font-bold text-accent uppercase tracking-widest block mb-2">// KONTROLA JAKOŚCI &amp; BUDŻETU</span>
-        <h2 class="font-heading font-extrabold text-3xl md:text-5xl mb-4 text-white">
-          Nie płać za błędy i samowolę ekip budowlanych
-        </h2>
-        <p class="font-sans text-gray-400 text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
-          Zyskaj niezależnego kierownika budowy, który osobiście sprawdza zbrojenia, hydroizolacje i roboty zanikające przed zalaniem betonem.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="tel:+48884757815" class="h-[50px] px-8 bg-accent hover:bg-accent-hover text-white font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center gap-2.5 transition-all shadow-lg w-full sm:w-auto">
-            <span class="ms-icon ms-icon--small" aria-hidden="true">call</span>
-            <span>Zadzwoń: +48 884 757 815</span>
-          </a>
-          <a href="/kontakt" class="h-[50px] px-8 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center gap-2.5 transition-all w-full sm:w-auto">
-            <span class="ms-icon ms-icon--small" aria-hidden="true">verified_user</span>
-            <span>Sprawdź dostępność i terminy <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_forward</span></span>
-          </a>
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">03</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Uwagi i dalsze działania</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Weryfikujemy wykonanie robót w uzgodnionym zakresie. Omawiamy zauważone nieprawidłowości i wskazujemy, co wymaga wyjaśnienia lub poprawy.</p>
+</div>
+
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">04</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Dokumenty końcowe</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">W ramach objętej funkcji przygotowujemy lub sprawdzamy dokumentację potrzebną do zakończenia budowy. Wskazujemy brakujące dokumenty i dalsze kroki.</p>
+</div>
+
+<!-- service-options:end --></div>
+        <p class="font-sans text-sm text-gray-600 leading-relaxed">Zakres zależy od wybranej funkcji i umowy. Wizyty odbywają się w ustalonych etapach — nie oznaczają stałej obecności na budowie. Projektowanie zmian, ekspertyzy i prace wymagające innych specjalności ustalamy oddzielnie.</p>
+      </section>
+
+      <section class="service-prep mb-20" aria-labelledby="prep-title">
+        <div class="service-prep-layout">
+          <div class="service-prep-intro">
+            <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// PRZED PIERWSZĄ ROZMOWĄ</span>
+            <h2 id="prep-title" class="font-heading font-bold text-3xl md:text-4xl mb-6">Co przygotować do wyceny?</h2>
+            <p class="font-sans text-sm text-gray-600 leading-relaxed">Na początek wystarczy lokalizacja, rodzaj budynku i planowany termin. Jeśli budowa już trwa, opisz jej etap i najbliższe roboty. Dokumenty omówimy po pierwszym kontakcie.</p>
+            <p class="font-sans text-sm text-gray-600 leading-relaxed">Cena zależy m.in. od zakresu odpowiedzialności, wielkości obiektu, dojazdu i liczby wizyt. Nie ma jednego pakietu odpowiedniego dla każdej budowy.</p>
+          </div>
+          <ul class="service-prep-list">
+            <li><span class="font-mono text-xs font-bold text-accent">01</span><div><h3 class="font-heading font-bold text-lg mb-2">Lokalizacja i termin</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Miejscowość, rodzaj inwestycji i przewidywany start lub termin najbliższej kontroli.</p></div></li>
+            <li><span class="font-mono text-xs font-bold text-accent">02</span><div><h3 class="font-heading font-bold text-lg mb-2">Projekt i dokumenty budowy</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Dostępna dokumentacja projektu oraz pozwolenie na budowę lub zgłoszenie, zależnie od inwestycji.</p></div></li>
+            <li><span class="font-mono text-xs font-bold text-accent">03</span><div><h3 class="font-heading font-bold text-lg mb-2">Etap robót i wykonawca</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Harmonogram, opis wykonanych prac i informacja, czy budowa ma już kierownika.</p></div></li>
+            <li><span class="font-mono text-xs font-bold text-accent">04</span><div><h3 class="font-heading font-bold text-lg mb-2">Oczekiwany zakres</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Prowadzenie budowy, nadzór inwestorski albo kontrola konkretnego etapu. Jeśli nie wiesz, czego potrzebujesz, pomożemy to ustalić.</p></div></li>
+          </ul>
         </div>
-      </div>
+      </section>
+
+      <section class="mb-20" aria-labelledby="steps-title">
+        <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// PRZEBIEG WSPÓŁPRACY</span>
+        <h2 id="steps-title" class="font-heading font-bold text-3xl md:text-4xl mb-12">Jak zaczynamy i prowadzimy współpracę?</h2>
+        <!-- service-steps:start -->
+<ol class="service-steps mt-14">
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">01</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Rozmowa o inwestycji</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Sprawdzamy lokalizację, termin, etap prac i potrzebny zakres pomocy.</p>
+</li>
+
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">02</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Zakres i warunki</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Ustalamy funkcję inżyniera, wynagrodzenie, zasady wizyt i kontaktu z wykonawcą.</p>
+</li>
+
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">03</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Kontrole na budowie</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Weryfikujemy uzgodnione etapy. Roboty wymagające kontroli zgłaszaj przed ich zakryciem.</p>
+</li>
+
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">04</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Podsumowanie i dokumenty</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Omawiamy wyniki kontroli i dalsze działania. Dokumentację prowadzimy odpowiednio do pełnionej funkcji.</p>
+</li>
+
+</ol>
+<!-- service-steps:end -->
+      </section>
+
+      <section class="mb-20" aria-labelledby="studio-title">
+        <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// POZNAJ GOPROJECT</span>
+        <h2 id="studio-title" class="font-heading font-bold text-3xl md:text-4xl mb-6">Pracownia i jej projekty</h2>
+        <p class="font-sans text-sm text-gray-600 leading-relaxed mb-8">Poznaj <a href="/o-nas" class="underline hover:text-accent">Adama Kubata i pracownię GoProject</a> oraz zobacz przykłady projektów domów. Poniżej przedstawiamy wizualizacje projektowe.</p>
+        <!-- project-cards:start -->
+<div class="project-showcase">
+<a href="/projekt-dom-jednorodzinny-chojnice">
+  <img src="/img/projects/dom-jednorodzinny-chojnice/dom-jednorodzinny-chojnice-elewacja-frontowa-hero-1920w.jpg" alt="Wizualizacja frontowej elewacji projektu domu jednorodzinnego w Chojnicach" loading="lazy" width="600" height="375">
+  <span class="project-card-caption flex items-center justify-between gap-4 p-5 md:p-6 font-heading font-bold text-base md:text-lg"><span>Dom jednorodzinny w Chojnicach</span><span class="ms-icon ms-icon--large text-accent shrink-0" aria-hidden="true">north_east</span></span>
+</a>
+
+<a href="/projekt-nowoczesna-stodola">
+  <img src="/img/projects/nowoczesna-stodola/nowoczesna-stodola-elewacja-frontowa-perspektywa.jpg" alt="Wizualizacja projektu domu w formie nowoczesnej stodoły" loading="lazy" width="1200" height="750">
+  <span class="project-card-caption flex items-center justify-between gap-4 p-5 md:p-6 font-heading font-bold text-base md:text-lg"><span>Nowoczesna stodoła</span><span class="ms-icon ms-icon--large text-accent shrink-0" aria-hidden="true">north_east</span></span>
+</a>
+
+</div>
+<!-- project-cards:end -->
+      </section>
+
+      <!-- shared-faq:start -->
+<section id="faq-usluga" class="shared-faq mb-20" aria-labelledby="faq-title">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-10">
+    <div class="faq-heading text-center max-w-3xl mx-auto mb-16">
+      <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-2">// PYTANIA PRZED STARTEM</span>
+      <h2 id="faq-title" class="font-heading font-extrabold text-3xl md:text-5xl">Pytania o kierownika budowy i nadzór</h2>
     </div>
+    <div class="faq-list space-y-4"><div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-1-button" aria-expanded="false" aria-controls="faq-usluga-1-answer">
+    <span>Ile kosztuje kierownik budowy lub nadzór inwestorski?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-1-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-1-button">Wycenę przygotowujemy dla konkretnej inwestycji. Uwzględniamy rodzaj i wielkość budynku, lokalizację, etap robót, zakres usługi oraz planowane wizyty. Podaj miejscowość i termin, abyśmy mogli sprawdzić dostępność i omówić warunki.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-2-button" aria-expanded="false" aria-controls="faq-usluga-2-answer">
+    <span>Czy kierownik budowy może być też inspektorem nadzoru?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-2-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-2-button">Nie na tej samej budowie. Są to odrębne funkcje, które muszą pełnić różne osoby. Jeżeli masz już kierownika budowy, możesz rozważyć niezależny nadzór inwestorski.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-3-button" aria-expanded="false" aria-controls="faq-usluga-3-answer">
+    <span>Jak często inżynier przyjeżdża na budowę?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-3-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-3-button">Terminy i zasady wizyt ustalamy według harmonogramu robót oraz objętej funkcji. Szczególnie ważne są kontrole przed betonowaniem i zakryciem elementów. Nie zakładamy stałej obecności inżyniera ani tej samej liczby wizyt dla wszystkich budów.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-4-button" aria-expanded="false" aria-controls="faq-usluga-4-answer">
+    <span>Czy możecie pomóc, gdy budowa już trwa?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-4-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-4-button">Skontaktuj się z nami i opisz etap prac, istniejącą dokumentację oraz powód zgłoszenia. Po zapoznaniu się z sytuacją ustalimy możliwość współpracy. Przy zmianie kierownika trzeba także uporządkować formalne przejęcie obowiązków.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-5-button" aria-expanded="false" aria-controls="faq-usluga-5-answer">
+    <span>Czy obsługujecie Gdańsk i inne miejscowości na Pomorzu?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-5-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-5-button">Tak, obszar usług obejmuje Chojnice, Gdańsk i województwo pomorskie. Możliwość dojazdu oraz terminy wizyt potwierdzamy dla konkretnej lokalizacji i harmonogramu budowy.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-6-button" aria-expanded="false" aria-controls="faq-usluga-6-answer">
+    <span>Czy odbiór mieszkania od dewelopera to ta sama usługa?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-6-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-6-button">Odbiór mieszkania lub domu od dewelopera ma inny zakres niż prowadzenie budowy lub nadzór inwestorski. Jeśli potrzebujesz sprawdzenia lokalu przed przekazaniem, zobacz <a href="/uslugi-odbiory-i-ekspertyzy" class="underline hover:text-accent">odbiory mieszkań, domów i ekspertyzy</a>.</div>
+</div>
+</div>
   </div>
+</section>
+<!-- shared-faq:end -->
+
+      <!-- SHARED SERVICE CTA: src/templates/service-cta.html -->
+      <section id="kontakt-usluga" class="service-cta" aria-labelledby="service-contact-title">
+        <span class="service-cta-label font-mono">// ZAPLANUJ KONTROLĘ ROBÓT</span>
+        <h2 id="service-contact-title" class="service-cta-title font-heading">Omów swoją budowę z inżynierem</h2>
+        <p class="service-cta-description font-sans">Podaj miejscowość, etap robót i planowany termin. Sprawdzimy dostępność i ustalimy, czy potrzebujesz kierownika budowy, nadzoru inwestorskiego czy kontroli wybranego etapu.</p>
+        <a href="/kontakt" class="service-cta-button font-mono">
+          Zapytaj o współpracę <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_forward</span>
+        </a>
+        <p class="service-cta-phone font-sans">Wolisz zadzwonić? <a href="tel:+48884757815">+48 884 757 815</a></p>
+      </section>
+      <!-- END SHARED SERVICE CTA -->
+
+    </div>
+  </main>
+
 
   <!-- FOOTER -->
   <footer class="bg-black text-gray-400 py-16 border-t border-zinc-800 font-mono text-xs mt-auto">

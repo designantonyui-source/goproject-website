@@ -1,0 +1,10 @@
+/* One FAQ presentation, based on the existing homepage. */
+.shared-faq .faq-heading { text-align: center; max-width: 48rem; margin: 0 auto 4rem; }
+.shared-faq .faq-list { display: grid; gap: 1rem; }
+.shared-faq .faq-item { border: 1px solid #e5e7eb; background: #fafafa; overflow: hidden; }
+.shared-faq .faq-toggle { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; width: 100%; padding: 1.5rem; text-align: left; cursor: pointer; }
+.shared-faq .faq-toggle:focus-visible { outline: 2px solid #ff3b00; outline-offset: -3px; }
+.shared-faq .faq-content { padding: 1rem 1.5rem 1.5rem; border-top: 1px solid #e5e7eb; }
+.shared-faq .faq-content.hidden { display: none; }
+.shared-faq .faq-list > .faq-item { margin-top: 0; margin-bottom: 0; }
+.shared-faq { scroll-margin-top: 6rem; }

@@ -449,6 +449,8 @@
     }
   </style>
   <script defer src="/js/analytics.js" data-measurement-id="G-38PL1XHPN5" data-privacy-url="/polityka-prywatnosci.html"></script>
+  <link rel="stylesheet" href="/css/shared-faq.css?v=20261015-2" />
+  <script defer src="/js/shared-faq.js?v=20261015-2"></script>
 </head>
 
 <body class="bg-white text-black font-sans antialiased selection:bg-accent selection:text-white">
@@ -922,7 +924,7 @@
 
             <p class="font-sans text-gray-600 text-xs md:text-sm leading-relaxed mb-6">
               Załatwiam formalności za Ciebie: decyzje o warunkach zabudowy (WZ), uzgodnienia wodnoprawne,
-              świadectwa energetyczne i dokumentacja do dotacji.
+              świadectwa energetyczne i dokumentacja do dotacji. Termin przygotowania świadectwa ustalamy po sprawdzeniu danych i dokumentów.
             </p>
 
             <!-- FEATURE PILLS -->
@@ -933,7 +935,7 @@
               </div>
               <div class="flex items-center gap-2.5 text-gray-800">
                 <span class="ms-icon ms-icon--small text-accent shrink-0" aria-hidden="true">check_circle</span>
-                <span class="font-medium">Świadectwa energetyczne w 24–48 h</span>
+                <span class="font-medium">Świadectwa energetyczne</span>
               </div>
               <div class="flex items-center gap-2.5 text-gray-800">
                 <span class="ms-icon ms-icon--small text-accent shrink-0" aria-hidden="true">check_circle</span>
@@ -1390,80 +1392,63 @@
   </section>
 
   <!-- FAQ SECTION -->
-  <section id="faq" class="scroll-mt-24 md:scroll-mt-28 py-24 bg-white text-black border-t border-gray-200">
-    <div class="max-w-[1200px] mx-auto px-4 md:px-10">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-2">05 // FAQ</span>
-        <h2 class="font-heading font-extrabold text-3xl md:text-5xl">Najczęściej zadawane pytania</h2>
-      </div>
-
-      <div class="space-y-4">
-
-        <div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
-          <button
-            class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors">
-            <span>Ile kosztuje projekt budowlany domu jednorodzinnego?</span>
-            <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
-          </button>
-          <div class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4">
-            Koszt zależy od wielkości domu, stopnia skomplikowania konstrukcji i uwarunkowań terenu. Po bezpłatnej
-            konsultacji przygotowuję wycenę w ciągu 24 h.
-          </div>
-        </div>
-
-        <div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
-          <button
-            class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors">
-            <span>Czy projekt gotowy trzeba adaptować do działki?</span>
-            <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
-          </button>
-          <div class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4">
-            Tak. Adaptacja jest wymagana prawnie, aby projekt katalogowy był zgodny z miejscowym planem (MPZP) lub
-            warunkami zabudowy (WZ) oraz warunkami gruntowymi.
-          </div>
-        </div>
-
-        <div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
-          <button
-            class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors">
-            <span>Ile trwa uzyskanie pozwolenia na budowę?</span>
-            <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
-          </button>
-          <div class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4">
-            Urząd ma ustawowo 65 dni na wydanie decyzji od złożenia kompletnego wniosku. Wszystkimi formalnościami
-            zajmuję się za Ciebie.
-          </div>
-        </div>
-
-        <div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
-          <button
-            class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors">
-            <span>Czym różni się kierownik budowy od inspektora nadzoru?</span>
-            <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
-          </button>
-          <div class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4">
-            Kierownik budowy odpowiada za prowadzenie robót zgodnie z projektem i przepisami prawa budowlanego.
-            Inspektor nadzoru inwestorskiego reprezentuje wyłącznie Ciebie i kontroluje jakość oraz rozliczenia
-            wykonawców.
-          </div>
-        </div>
-
-        <div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
-          <button
-            class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors">
-            <span>Dlaczego warto powierzyć projekt i kierownictwo budowy jednej osobie?</span>
-            <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
-          </button>
-          <div class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4">
-            Eliminuje to częsty problem przerzucania odpowiedzialności między biurem projektowym a budową. Jako autor
-            projektu znam każdy detal techniczny — szybko rozwiewam wątpliwości wykonawców, ograniczam przestoje
-            i dbam o pełną zgodność realizacji z dokumentacją.
-          </div>
-        </div>
-
-      </div>
+  <!-- shared-faq:start -->
+<section id="faq" class="shared-faq scroll-mt-24 md:scroll-mt-28 py-24 bg-white text-black border-t border-gray-200" aria-labelledby="home-faq-title">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-10">
+    <div class="faq-heading text-center max-w-3xl mx-auto mb-16">
+      <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-2">05 // FAQ</span>
+      <h2 id="home-faq-title" class="font-heading font-extrabold text-3xl md:text-5xl">Najczęściej zadawane pytania</h2>
     </div>
-  </section>
+    <div class="faq-list space-y-4"><div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-1-button" aria-expanded="false" aria-controls="faq-1-answer">
+    <span>Ile kosztuje projekt budowlany domu jednorodzinnego?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-1-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-1-button">Koszt zależy od wielkości domu, stopnia skomplikowania konstrukcji i uwarunkowań terenu. Po bezpłatnej
+            konsultacji przygotowuję wycenę w ciągu 24 h.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-2-button" aria-expanded="false" aria-controls="faq-2-answer">
+    <span>Czy projekt gotowy trzeba adaptować do działki?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-2-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-2-button">Tak. Adaptacja jest wymagana prawnie, aby projekt katalogowy był zgodny z miejscowym planem (MPZP) lub
+            warunkami zabudowy (WZ) oraz warunkami gruntowymi.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-3-button" aria-expanded="false" aria-controls="faq-3-answer">
+    <span>Ile trwa uzyskanie pozwolenia na budowę?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-3-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-3-button">Urząd ma ustawowo 65 dni na wydanie decyzji od złożenia kompletnego wniosku. Wszystkimi formalnościami
+            zajmuję się za Ciebie.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-4-button" aria-expanded="false" aria-controls="faq-4-answer">
+    <span>Czym różni się kierownik budowy od inspektora nadzoru?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-4-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-4-button">Kierownik budowy odpowiada za prowadzenie robót zgodnie z projektem i przepisami prawa budowlanego.
+            Inspektor nadzoru inwestorskiego reprezentuje wyłącznie Ciebie i kontroluje jakość oraz rozliczenia
+            wykonawców.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-5-button" aria-expanded="false" aria-controls="faq-5-answer">
+    <span>Dlaczego warto powierzyć projekt i kierownictwo budowy jednej osobie?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-5-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-5-button">Eliminuje to częsty problem przerzucania odpowiedzialności między biurem projektowym a budową. Jako autor
+            projektu znam każdy detal techniczny — szybko rozwiewam wątpliwości wykonawców, ograniczam przestoje
+            i dbam o pełną zgodność realizacji z dokumentacją.</div>
+</div>
+</div>
+  </div>
+</section>
+<!-- shared-faq:end -->
 
   <!-- CONTACT SECTION -->
   <section id="kontakt" class="scroll-mt-24 md:scroll-mt-28 py-24 bg-black text-white">
@@ -1842,17 +1827,6 @@
         });
       }
       updatePortfolioSlider();
-
-      // FAQ Accordion
-      const faqToggles = document.querySelectorAll('.faq-toggle');
-      faqToggles.forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          const content = toggle.nextElementSibling;
-          const isHidden = content.classList.contains('hidden');
-          document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
-          if (isHidden) content.classList.remove('hidden');
-        });
-      });
 
       // Contact Form (AJAX to ./contact.php)
       const form = document.getElementById('contact-form');

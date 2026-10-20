@@ -1,0 +1,186 @@
+{
+  "uslugi-nadzor-i-kierownik-budowy.html": {
+    "options": [
+      {
+        "number": "01",
+        "title": "Dokumentacja i plan kontroli",
+        "description": "Omawiamy projekt, aktualny etap budowy i harmonogram wykonawcy. Ustalamy zadania inżyniera i momenty wymagające wizyty."
+      },
+      {
+        "number": "02",
+        "title": "Kontrola przed zakryciem",
+        "description": "Sprawdzamy wskazane etapy, np. zbrojenie przed betonowaniem lub izolacje przed zasypaniem. Termin kontroli trzeba uzgodnić przed wykonaniem kolejnych prac."
+      },
+      {
+        "number": "03",
+        "title": "Uwagi i dalsze działania",
+        "description": "Weryfikujemy wykonanie robót w uzgodnionym zakresie. Omawiamy zauważone nieprawidłowości i wskazujemy, co wymaga wyjaśnienia lub poprawy."
+      },
+      {
+        "number": "04",
+        "title": "Dokumenty końcowe",
+        "description": "W ramach objętej funkcji przygotowujemy lub sprawdzamy dokumentację potrzebną do zakończenia budowy. Wskazujemy brakujące dokumenty i dalsze kroki."
+      }
+    ],
+    "steps": [
+      {
+        "number": "01",
+        "title": "Rozmowa o inwestycji",
+        "description": "Sprawdzamy lokalizację, termin, etap prac i potrzebny zakres pomocy."
+      },
+      {
+        "number": "02",
+        "title": "Zakres i warunki",
+        "description": "Ustalamy funkcję inżyniera, wynagrodzenie, zasady wizyt i kontaktu z wykonawcą."
+      },
+      {
+        "number": "03",
+        "title": "Kontrole na budowie",
+        "description": "Weryfikujemy uzgodnione etapy. Roboty wymagające kontroli zgłaszaj przed ich zakryciem."
+      },
+      {
+        "number": "04",
+        "title": "Podsumowanie i dokumenty",
+        "description": "Omawiamy wyniki kontroli i dalsze działania. Dokumentację prowadzimy odpowiednio do pełnionej funkcji."
+      }
+    ]
+  },
+  "uslugi-projekty-i-adaptacje.html": {
+    "options": [
+      {
+        "number": "01",
+        "title": "Indywidualne projekty (<span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-6\" aria-expanded=\"false\">PAB</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-6\"><strong>Projekt architektoniczno-budowlany</strong><span>Opisuje formę budynku, jego funkcję oraz podstawowe rozwiązania architektoniczne.</span></span></span> + <span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-7\" aria-expanded=\"false\">PT</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-7\"><strong>Projekt techniczny</strong><span>Zawiera rozwiązania techniczne potrzebne do realizacji budynku, między innymi konstrukcyjne i instalacyjne.</span></span></span>)",
+        "description": "Projekt domu z dokumentacją architektoniczną i techniczną (<span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-8\" aria-expanded=\"false\">PAB</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-8\"><strong>Projekt architektoniczno-budowlany</strong><span>Opisuje formę budynku, jego funkcję oraz podstawowe rozwiązania architektoniczne.</span></span></span> + <span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-9\" aria-expanded=\"false\">PT</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-9\"><strong>Projekt techniczny</strong><span>Zawiera rozwiązania techniczne potrzebne do realizacji budynku, między innymi konstrukcyjne i instalacyjne.</span></span></span>)."
+      },
+      {
+        "number": "02",
+        "title": "<span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-10\" aria-expanded=\"false\">Adaptacja</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-10\"><strong>Adaptacja projektu gotowego</strong><span>Dostosowanie wybranego projektu do warunków konkretnej działki i planowanej inwestycji.</span></span></span> projektów gotowych",
+        "description": "Adaptacja projektu katalogowego do warunków działki oraz wymagań <span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-11\" aria-expanded=\"false\">MPZP</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-11\"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span> lub <span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-12\" aria-expanded=\"false\">WZ</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-12\"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>."
+      },
+      {
+        "number": "03",
+        "title": "Modelowanie 3D & wizualizacje",
+        "description": "Fotorealistyczny podgląd bryły i nasłonecznienia."
+      },
+      {
+        "number": "04",
+        "title": "Przebudowy i rozbudowy",
+        "description": "Modernizacja istniejących obiektów i nadbudowy."
+      }
+    ],
+    "steps": [
+      {
+        "number": "01",
+        "title": "Poznajemy plan inwestycji",
+        "description": "Opisujesz działkę, potrzeby i wybrany projekt, jeśli już go masz."
+      },
+      {
+        "number": "02",
+        "title": "Sprawdzamy warunki",
+        "description": "Analizujemy dostępne informacje o działce i ustalenia <span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-17\" aria-expanded=\"false\">MPZP</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-17\"><strong>Miejscowy plan zagospodarowania przestrzennego</strong><span>Dokument gminy określający, co i na jakich zasadach można zbudować na danym terenie.</span></span></span> lub <span class=\"term-tip\"><button type=\"button\" class=\"term-tip-trigger\" aria-describedby=\"term-tooltip-18\" aria-expanded=\"false\">WZ</button><span class=\"term-tip-bubble\" role=\"tooltip\" id=\"term-tooltip-18\"><strong>Decyzja o warunkach zabudowy</strong><span>Określa warunki dla planowanej inwestycji, gdy teren nie jest objęty MPZP.</span></span></span>."
+      },
+      {
+        "number": "03",
+        "title": "Ustalamy prace i wycenę",
+        "description": "Określamy potrzebne opracowania, możliwe zmiany i dalsze kroki."
+      },
+      {
+        "number": "04",
+        "title": "Przygotowujemy dokumentację",
+        "description": "Realizujemy uzgodniony projekt lub adaptację i omawiamy gotowe opracowanie."
+      }
+    ]
+  },
+  "uslugi-formalnosci-i-energetyka.html": {
+    "options": [
+      {
+        "number": "01",
+        "title": "Wniosek o warunki zabudowy",
+        "description": "Dla inwestora planującego zabudowę działki. Sprawdzamy sytuację planistyczną, omawiamy zamierzenie i przygotowujemy uzgodniony zakres dokumentów do wniosku. Decyzję wydaje właściwy urząd."
+      },
+      {
+        "number": "02",
+        "title": "Świadectwo energetyczne",
+        "description": "Dokument opisujący zapotrzebowanie budynku lub lokalu na energię. Przygotowujemy go na podstawie danych o nieruchomości i instalacjach, odpowiednio do celu zlecenia."
+      },
+      {
+        "number": "03",
+        "title": "Audyt energetyczny",
+        "description": "Dla właściciela, który planuje termomodernizację. Analiza pomaga określić zakres usprawnień energetycznych. Jeśli korzystasz z dofinansowania, wymagania dokumentacji sprawdzamy dla konkretnego programu."
+      },
+      {
+        "number": "04",
+        "title": "Pozostałe formalności",
+        "description": "Omawiamy potrzebne uzgodnienia, np. dotyczące zjazdu lub uwarunkowań środowiskowych. Możliwość obsługi, wymagane opracowania i udział specjalistów ustalamy dla konkretnej inwestycji."
+      }
+    ],
+    "steps": [
+      {
+        "number": "01",
+        "title": "Rozmowa o celu",
+        "description": "Omawiamy działkę lub nieruchomość, potrzebny dokument, lokalizację i oczekiwany termin."
+      },
+      {
+        "number": "02",
+        "title": "Zakres i wycena",
+        "description": "Sprawdzamy dostępne dane. Ustalamy opracowanie, potrzebne załączniki, cenę i termin naszej pracy."
+      },
+      {
+        "number": "03",
+        "title": "Przygotowanie dokumentów",
+        "description": "Opracowujemy uzgodniony zakres. Wyjaśniamy brakujące informacje i potrzebę dodatkowych ustaleń."
+      },
+      {
+        "number": "04",
+        "title": "Przekazanie i dalsze kroki",
+        "description": "Przekazujemy dokumentację i omawiamy jej wykorzystanie. Obsługę postępowania urzędowego ustalamy oddzielnie."
+      }
+    ]
+  },
+  "uslugi-odbiory-i-ekspertyzy.html": {
+    "options": [
+      {
+        "number": "01",
+        "title": "Odbiór mieszkania lub domu",
+        "description": "Dla kupujących nieruchomość od dewelopera. Sprawdzamy uzgodnione elementy lokalu i opisujemy zauważone usterki przed jego przekazaniem."
+      },
+      {
+        "number": "02",
+        "title": "Ekspertyza budowlana",
+        "description": "Gdy niepokoją Cię pęknięcia, odkształcenia lub stan istniejącego budynku. Najpierw ustalamy problem i potrzebne materiały, a następnie zakres oględzin i opracowania."
+      },
+      {
+        "number": "03",
+        "title": "Badanie termowizyjne",
+        "description": "Pomaga wskazać miejsca wymagające dalszej diagnostyki, np. przy podejrzeniu strat ciepła. Przydatność badania i warunki jego wykonania ustalamy przed wizytą."
+      },
+      {
+        "number": "04",
+        "title": "Przegląd budynku",
+        "description": "Dla właścicieli i zarządców istniejących obiektów. Ustalamy rodzaj kontroli, wymagane specjalności i dokumentację. Odbiór lokalu nie zastępuje okresowego przeglądu budynku."
+      }
+    ],
+    "steps": [
+      {
+        "number": "01",
+        "title": "Ustalenie zakresu",
+        "description": "Omawiamy nieruchomość i Twoje oczekiwania. Potwierdzamy termin, cenę i potrzebne dokumenty."
+      },
+      {
+        "number": "02",
+        "title": "Kontrola na miejscu",
+        "description": "Sprawdzamy dostępne elementy według uzgodnionego zakresu. Wyjaśniamy zauważone nieprawidłowości."
+      },
+      {
+        "number": "03",
+        "title": "Opis usterek",
+        "description": "Dokumentujemy wyniki i omawiamy kwestie do zgłoszenia wykonawcy lub deweloperowi."
+      },
+      {
+        "number": "04",
+        "title": "Dalsze działania",
+        "description": "Wskazujemy, co wymaga wyjaśnienia, poprawy albo dodatkowego badania. Ewentualną ponowną kontrolę ustalamy oddzielnie."
+      }
+    ]
+  }
+}

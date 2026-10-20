@@ -8,7 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" sizes="any" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
   <link rel="manifest" href="/site.webmanifest" />
-  <title>Odbiór techniczny mieszkań | Chojnice — GoProject</title>
+  <title>Odbiory i ekspertyzy budowlane | Chojnice — GoProject</title>
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="description" content="Odbiory techniczne mieszkań i domów od dewelopera oraz ekspertyzy budowlane. Obsługujemy Chojnice, Gdańsk i woj. pomorskie. Pomiary i protokół usterek." />
   <!-- Preload custom fonts to help avoid FOUT (Flash of unstyled text) -->
@@ -24,13 +24,17 @@
   <link rel="preload" href="./fonts/space-grotesk-700-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.min.css?v=sharp-20261013" />
+  <link rel="stylesheet" href="/css/service-hero.css?v=20261015" />
+  <link rel="stylesheet" href="/css/service-cta.css?v=20261015" />
+  <link rel="stylesheet" href="/css/service-navigation.css?v=20261015" />
+  <link rel="stylesheet" href="/css/service-content.css?v=20261015-2" />
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp&amp;icon_names=arrow_back,arrow_downward,arrow_forward,assignment_turned_in,calculate,calendar_month,call,check,check_circle,chevron_left,chevron_right,close,crop_free,description,explore,grid_view,home,keyboard_arrow_down,layers,location_on,mail,menu,north_east,schedule,send,task,verified_user,zoom_in&amp;display=block" />
   <link rel="canonical" href="https://goproject.com.pl/uslugi-odbiory-i-ekspertyzy" />
   <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://goproject.com.pl/uslugi-odbiory-i-ekspertyzy" />
-  <meta property="og:title" content="Odbiór techniczny mieszkań | Chojnice — GoProject" />
+  <meta property="og:title" content="Odbiory i ekspertyzy budowlane | Chojnice — GoProject" />
   <meta property="og:description" content="Odbiory techniczne mieszkań i domów od dewelopera oraz ekspertyzy budowlane. Obsługujemy Chojnice, Gdańsk i woj. pomorskie. Pomiary i protokół usterek." />
   <meta property="og:image" content="https://goproject.com.pl/img/og-image.jpg" />
   <meta property="og:image:secure_url" content="https://goproject.com.pl/img/og-image.jpg" />
@@ -43,7 +47,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Odbiór techniczny mieszkań | Chojnice — GoProject" />
+  <meta name="twitter:title" content="Odbiory i ekspertyzy budowlane | Chojnice — GoProject" />
   <meta name="twitter:description" content="Odbiory techniczne mieszkań i domów od dewelopera oraz ekspertyzy budowlane. Obsługujemy Chojnice, Gdańsk i woj. pomorskie. Pomiary i protokół usterek." />
   <meta name="twitter:image" content="https://goproject.com.pl/img/og-image.jpg" />
   <meta name="twitter:image:alt" content="GoProject Pracownia Projektowa — Nowoczesne projekty domów" />
@@ -125,6 +129,9 @@
     }
   </style>
   <script defer src="/js/analytics.js" data-measurement-id="G-38PL1XHPN5" data-privacy-url="/polityka-prywatnosci.html"></script>
+  <script defer src="/js/service-navigation.js?v=20261015"></script>
+  <link rel="stylesheet" href="/css/shared-faq.css?v=20261015-2" />
+  <script defer src="/js/shared-faq.js?v=20261015-2"></script>
 </head>
 <body class="bg-white text-black font-sans antialiased selection:bg-accent selection:text-white">
   <!-- HEADER -->
@@ -196,7 +203,7 @@
         <div class="border-b border-zinc-800/80 pb-4">
           <button id="mobile-oferta-toggle" class="w-full flex items-center justify-between font-bold text-accent py-2 text-base">
             <span>// OFERTA USŁUG</span>
-            <span id="mobile-oferta-arrow" class="ms-icon ms-icon--small transition-transform duration-200 rotate-180" aria-hidden="true">keyboard_arrow_down</span>
+            <span id="mobile-oferta-arrow" class="ms-icon ms-icon--medium transition-transform duration-200 rotate-180" aria-hidden="true">keyboard_arrow_down</span>
           </button>
           <div id="mobile-oferta-submenu" class="pl-4 pt-3 space-y-2 text-sm sm:text-base border-l-2 border-accent/60 ml-1 mt-2">
             <a href="/uslugi-projekty-i-adaptacje" class="block py-2.5 text-zinc-200 font-medium hover:text-accent transition-colors">01 / Projekty budowlane & adaptacje</a>
@@ -210,22 +217,22 @@
         <div class="space-y-1 font-mono text-base font-medium uppercase tracking-wider">
           <a href="/o-nas" class="py-3 border-b border-zinc-800/80 text-zinc-200 hover:text-accent transition-colors flex items-center justify-between">
             <span>O pracowni</span>
-            <span class="ms-icon ms-icon--small text-zinc-500" aria-hidden="true">north_east</span>
+            <span class="ms-icon ms-icon--medium text-zinc-500" aria-hidden="true">north_east</span>
           </a>
           <a href="/projekty" class="py-3 border-b border-zinc-800/80 text-zinc-200 hover:text-accent transition-colors flex items-center justify-between">
             <span>Portfolio Projektów</span>
-            <span class="ms-icon ms-icon--small text-zinc-500" aria-hidden="true">north_east</span>
+            <span class="ms-icon ms-icon--medium text-zinc-500" aria-hidden="true">north_east</span>
           </a>
           <a href="/kontakt" class="py-3 border-b border-zinc-800/80 text-zinc-200 hover:text-accent transition-colors flex items-center justify-between">
             <span>Kontakt</span>
-            <span class="ms-icon ms-icon--small text-zinc-500" aria-hidden="true">north_east</span>
+            <span class="ms-icon ms-icon--medium text-zinc-500" aria-hidden="true">north_east</span>
           </a>
         </div>
 
         <!-- QUICK CONTACT & CTA -->
         <div class="pt-4 space-y-3">
           <a href="tel:+48884757815" class="w-full h-12 bg-zinc-900 border border-zinc-800 hover:border-accent text-white font-mono text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2.5 transition-all">
-            <span class="ms-icon ms-icon--small text-accent" aria-hidden="true">call</span>
+            <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">call</span>
             <span>Zadzwoń: +48 884 757 815</span>
           </a>
         </div>
@@ -239,102 +246,205 @@
       </div>
     </div>
 
-  <div class="pt-28 md:pt-32 pb-24 bg-white text-black min-h-screen">
+  <main class="pt-28 md:pt-32 pb-24 bg-white text-black min-h-screen">
     <div class="max-w-[1600px] mx-auto px-4 md:px-10">
       <a href="/uslugi" class="inline-flex items-center gap-2 font-mono text-xs font-bold text-gray-500 hover:text-black uppercase tracking-wider mb-8 transition-colors">
-        <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_back</span> Wszystkie usługi
+        <span class="ms-icon ms-icon--medium" aria-hidden="true">arrow_back</span> Wszystkie usługi
       </a>
 
-      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16 pb-10 border-b border-gray-200">
-        <div class="max-w-4xl">
-          <div class="inline-block font-mono text-xs font-bold text-accent uppercase tracking-widest mb-3 bg-accent/10 border border-accent/30 px-3.5 py-1">
-            03 / ODBIORY & EKSPERTYZY // CHOJNICE, GDAŃSK & POMORSKIE
+      <section class="mb-16" aria-labelledby="service-hero-title">
+        <div class="service-hero">
+          <div class="service-hero-copy">
+            <div class="font-mono text-xs font-bold text-accent uppercase tracking-widest mb-5">03 / Odbiory i ekspertyzy · Chojnice, Gdańsk, Pomorskie</div>
+            <h1 id="service-hero-title" class="font-heading font-extrabold text-4xl md:text-5xl xl:text-6xl mb-6">Odbiory mieszkań i ekspertyzy budowlane</h1>
+            <p class="font-sans text-gray-700 text-base md:text-xl leading-relaxed mb-8">Sprawdzamy stan techniczny mieszkań i domów. Opisujemy wykryte usterki i pomagamy ustalić, co wymaga poprawy przed odbiorem nieruchomości.</p>
+            <a href="#zakres-uslugi" class="service-hero-scroll font-mono text-xs font-bold uppercase tracking-wider">
+              <span class="ms-icon ms-icon--medium" aria-hidden="true">arrow_downward</span>
+              <span>Poniżej: zakres i przebieg współpracy</span>
+            </a>
           </div>
-          <h1 class="font-heading font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-            Odbiór techniczny mieszkania i ekspertyzy budowlane w Chojnicach
-          </h1>
-          <p class="font-sans text-gray-700 text-base md:text-xl leading-relaxed">
-            Podczas odbioru technicznego mieszkania lub domu sprawdzamy tynki, posadzki, stolarkę okienną i inne elementy. Wykryte usterki opisujemy w protokole, aby ułatwić zaplanowanie poprawek przed zakończeniem odbioru. Usługi realizujemy w Chojnicach, Gdańsku i województwie pomorskim.
-          </p>
+          <figure class="service-hero-image">
+            <img src="/img/projects/budynek-mieszkalny-wielorodzinny/budynek-mieszkalny-wielorodzinny-wizualizacja-glowna.jpg" alt="Wizualizacja projektu budynku mieszkalnego wielorodzinnego GoProject" fetchpriority="high">
+            <figcaption>Budynek wielorodzinny · Wizualizacja GoProject</figcaption>
+          </figure>
         </div>
+      </section>
 
-        <!-- SERVICE VALUE / SPECS CARD (REPLACES REDUNDANT PHONE BOX) -->
-        <div class="p-6 bg-studio-surface border border-gray-200 flex flex-col justify-between shrink-0 lg:w-80 shadow-sm">
-          <div>
-            <div class="font-mono text-[10px] font-bold text-accent uppercase tracking-widest mb-1.5">// PARAMETRY USŁUGI</div>
-            <div class="font-heading font-bold text-sm text-black mb-3">Odbiory & Ekspertyzy</div>
-            
-            <div class="space-y-2.5 font-sans text-xs text-gray-600 border-t border-gray-200 pt-3">
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Sprzęt pomiarowy:</span>
-                <span class="font-bold text-black">Laser + FLIR Termowizja</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Protokół usterek:</span>
-                <span class="font-bold text-black">Wydawany na miejscu</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Zgodność:</span>
-                <span class="font-bold text-black">Normy PN-EN i PN-B</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Inżynier odbierający:</span>
-                <span class="font-bold text-black">mgr inż. Adam Kubat</span>
-              </div>
-            </div>
+      <section class="mb-20" id="zakres-uslugi" aria-labelledby="inspection-services-title">
+        <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// WYBIERZ ZAKRES POMOCY</span>
+        <h2 id="inspection-services-title" class="font-heading font-bold text-3xl md:text-4xl mb-8">Odbiór, ekspertyza czy przegląd budynku?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- service-options:start -->
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">01</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Odbiór mieszkania lub domu</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Dla kupujących nieruchomość od dewelopera. Sprawdzamy uzgodnione elementy lokalu i opisujemy zauważone usterki przed jego przekazaniem.</p>
+</div>
+
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">02</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Ekspertyza budowlana</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Gdy niepokoją Cię pęknięcia, odkształcenia lub stan istniejącego budynku. Najpierw ustalamy problem i potrzebne materiały, a następnie zakres oględzin i opracowania.</p>
+</div>
+
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">03</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Badanie termowizyjne</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Pomaga wskazać miejsca wymagające dalszej diagnostyki, np. przy podejrzeniu strat ciepła. Przydatność badania i warunki jego wykonania ustalamy przed wizytą.</p>
+</div>
+
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">04</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Przegląd budynku</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Dla właścicieli i zarządców istniejących obiektów. Ustalamy rodzaj kontroli, wymagane specjalności i dokumentację. Odbiór lokalu nie zastępuje okresowego przeglądu budynku.</p>
+</div>
+
+<!-- service-options:end --></div>
+      </section>
+
+      <section class="service-prep mb-20" aria-labelledby="inspection-scope-title">
+        <div class="service-prep-layout">
+          <div class="service-prep-intro">
+            <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// KONTROLA I JEJ WYNIK</span>
+            <h2 id="inspection-scope-title" class="font-heading font-bold text-3xl md:text-4xl mb-6">Co sprawdzamy podczas odbioru?</h2>
+            <p class="font-sans text-sm text-gray-600 leading-relaxed">Zakres dopasowujemy do mieszkania lub domu, etapu wykończenia oraz dostępnych dokumentów. Kontrolujemy elementy, do których mamy dostęp w dniu wizyty.</p>
+            <h3 class="font-heading font-bold text-lg mb-3">Co otrzymujesz?</h3>
+            <p class="font-sans text-sm text-gray-600 leading-relaxed">Opis zauważonych usterek w protokole oraz omówienie wyników kontroli. Wskazujemy, które kwestie wymagają poprawy lub dalszego sprawdzenia. Formę dokumentacji i termin jej przekazania ustalamy przed zleceniem.</p>
+            <p class="font-sans text-sm text-gray-600 leading-relaxed">Ekspertyza dotycząca konkretnego problemu jest odrębnym opracowaniem. Jej zakres, potrzebne badania i wnioski ustalamy indywidualnie.</p>
           </div>
+          <ul class="service-prep-list">
+            <li><span class="font-mono text-xs font-bold text-accent">01</span><div><h3 class="font-heading font-bold text-lg mb-2">Ściany, tynki i posadzki</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Widoczne uszkodzenia, pęknięcia, równość powierzchni i inne nieprawidłowości dostępne do oceny.</p></div></li>
+            <li><span class="font-mono text-xs font-bold text-accent">02</span><div><h3 class="font-heading font-bold text-lg mb-2">Okna i drzwi</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Stan stolarki, oszklenia i okuć, działanie skrzydeł oraz widoczne wykończenie połączeń.</p></div></li>
+            <li><span class="font-mono text-xs font-bold text-accent">03</span><div><h3 class="font-heading font-bold text-lg mb-2">Dokumentacja i stan lokalu</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Porównanie dostępnych elementów z przekazanymi rzutami i uzgodnionym standardem wykończenia.</p></div></li>
+            <li><span class="font-mono text-xs font-bold text-accent">04</span><div><h3 class="font-heading font-bold text-lg mb-2">Pozostałe uzgodnione elementy</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Dostępne części balkonu, tarasu lub instalacji — odpowiednio do zlecenia. Specjalistyczne pomiary instalacji i badania wymagające odkrywek ustalamy oddzielnie.</p></div></li>
+          </ul>
+        </div>
+      </section>
 
-          <a href="/kontakt" class="h-[40px] px-4 bg-black text-white hover:bg-accent font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center gap-2 transition-all w-full mt-4">
-            <span>Zarezerwuj termin odbioru <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_forward</span></span>
-          </a>
+      <section class="mb-20" aria-labelledby="inspection-prep-title">
+        <div class="service-prep-layout">
+          <div class="service-prep-intro">
+            <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// PRZED WIZYTĄ</span>
+            <h2 id="inspection-prep-title" class="font-heading font-bold text-3xl md:text-4xl mb-6">Jak przygotować się do kontroli?</h2>
+            <p class="font-sans text-sm text-gray-600 leading-relaxed">Podaj miejscowość, rodzaj i powierzchnię nieruchomości oraz proponowany termin. Jeśli zgłaszasz konkretny problem, opisz go i przygotuj zdjęcia.</p>
+            <h3 class="font-heading font-bold text-lg mb-3">Od czego zależy cena?</h3>
+            <p class="font-sans text-sm text-gray-600 leading-relaxed">Od wielkości i rodzaju obiektu, lokalizacji, zakresu kontroli oraz potrzebnych badań i dokumentacji. Cenę i dostępność potwierdzamy przed wizytą — odbiór mieszkania i ekspertyza budynku mają różny zakres.</p>
+          </div>
+          <ul class="service-prep-list">
+            <li><span class="font-mono text-xs font-bold text-accent">01</span><div><h3 class="font-heading font-bold text-lg mb-2">Rzut i standard wykończenia</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Przygotuj rzut lokalu, opis standardu i dokumenty określające zakres prac dewelopera, jeśli je posiadasz.</p></div></li>
+            <li><span class="font-mono text-xs font-bold text-accent">02</span><div><h3 class="font-heading font-bold text-lg mb-2">Dostęp do pomieszczeń</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Uzgodnij wejście na nieruchomość. Poinformuj nas o ograniczeniach dostępu oraz dostępności prądu i wody.</p></div></li>
+            <li><span class="font-mono text-xs font-bold text-accent">03</span><div><h3 class="font-heading font-bold text-lg mb-2">Czas na sprawdzenie lokalu</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Termin wizyty skoordynuj z deweloperem lub osobą udostępniającą lokal. Przewidywany czas kontroli ustalimy po poznaniu zakresu.</p></div></li>
+            <li><span class="font-mono text-xs font-bold text-accent">04</span><div><h3 class="font-heading font-bold text-lg mb-2">Wcześniejsze usterki i dokumenty</h3><p class="font-sans text-sm text-gray-600 leading-relaxed">Zbierz wcześniejsze protokoły, informacje o naprawach i pytania. Przy ekspertyzie przydatna będzie również dostępna dokumentacja budynku.</p></div></li>
+          </ul>
         </div>
-      </div>
+      </section>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">01</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Odbiory mieszkań od dewelopera</h3>
-          <p class="font-sans text-xs text-gray-600">Badanie tynków, wylewek, stolarki okiennej i instalacji z protokołem usterkowym.</p>
-        </div>
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">02</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Badania Termowizyjne</h3>
-          <p class="font-sans text-xs text-gray-600">Wykrywanie mostków cieplnych, nieszczelności i zawilgoceń kamerą FLIR.</p>
-        </div>
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">03</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Ekspertyzy budowlane</h3>
-          <p class="font-sans text-xs text-gray-600">Opinie inżynierskie dotyczące spękań ścian, nośności i ugięć stropów.</p>
-        </div>
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">04</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Przeglądy budynków (KOB)</h3>
-          <p class="font-sans text-xs text-gray-600">Okresowe przeglądy 1-roczne i 5-letnie budynków (art. 62 Prawa Budowlanego).</p>
-        </div>
-      </div>
+      <section class="mb-20" aria-labelledby="inspection-steps-title">
+        <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// PRZEBIEG WSPÓŁPRACY</span>
+        <h2 id="inspection-steps-title" class="font-heading font-bold text-3xl md:text-4xl mb-12">Jak przebiega odbiór?</h2>
+        <!-- service-steps:start -->
+<ol class="service-steps mt-14">
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">01</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Ustalenie zakresu</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Omawiamy nieruchomość i Twoje oczekiwania. Potwierdzamy termin, cenę i potrzebne dokumenty.</p>
+</li>
 
-      <!-- DUAL ACTION CLOSING BANNER -->
-      <div class="bg-black text-white p-10 md:p-14 text-center border border-zinc-800 shadow-2xl">
-        <span class="font-mono text-[11px] font-bold text-accent uppercase tracking-widest block mb-2">// OCHRONA PRZED KOSZTAMI POPRAWEK</span>
-        <h2 class="font-heading font-extrabold text-3xl md:text-5xl mb-4 text-white">
-          Nie płać za błędy dewelopera z własnej kieszeni
-        </h2>
-        <p class="font-sans text-gray-400 text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
-          Zleć odbiór uprawnionemu inżynierowi z kamerą termowizyjną i certyfikowanym sprzętem pomiarowym. Protokół z normami prawnymi sporządzamy od ręki na miejscu.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="tel:+48884757815" class="h-[50px] px-8 bg-accent hover:bg-accent-hover text-white font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center gap-2.5 transition-all shadow-lg w-full sm:w-auto">
-            <span class="ms-icon ms-icon--small" aria-hidden="true">call</span>
-            <span>Zadzwoń: +48 884 757 815</span>
-          </a>
-          <a href="/kontakt" class="h-[50px] px-8 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center gap-2.5 transition-all w-full sm:w-auto">
-            <span class="ms-icon ms-icon--small" aria-hidden="true">assignment_turned_in</span>
-            <span>Zarezerwuj termin odbioru mieszkania <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_forward</span></span>
-          </a>
-        </div>
-      </div>
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">02</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Kontrola na miejscu</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Sprawdzamy dostępne elementy według uzgodnionego zakresu. Wyjaśniamy zauważone nieprawidłowości.</p>
+</li>
+
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">03</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Opis usterek</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Dokumentujemy wyniki i omawiamy kwestie do zgłoszenia wykonawcy lub deweloperowi.</p>
+</li>
+
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">04</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Dalsze działania</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Wskazujemy, co wymaga wyjaśnienia, poprawy albo dodatkowego badania. Ewentualną ponowną kontrolę ustalamy oddzielnie.</p>
+</li>
+
+</ol>
+<!-- service-steps:end -->
+      </section>
+
+      <!-- shared-faq:start -->
+<section id="faq-usluga" class="shared-faq mb-20" aria-labelledby="inspection-faq-title">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-10">
+    <div class="faq-heading text-center max-w-3xl mx-auto mb-16">
+      <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-2">// PYTANIA PRZED ODBIOREM</span>
+      <h2 id="inspection-faq-title" class="font-heading font-extrabold text-3xl md:text-5xl">Pytania o odbiory i ekspertyzy</h2>
     </div>
+    <div class="faq-list space-y-4"><div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-1-button" aria-expanded="false" aria-controls="faq-usluga-1-answer">
+    <span>Ile kosztuje odbiór mieszkania lub domu?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-1-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-1-button">Podaj miejscowość, powierzchnię nieruchomości i zakres pomocy. Na tej podstawie omówimy cenę oraz termin. Badanie termowizyjne, ekspertyzę i ponowną wizytę wyceniamy odpowiednio do potrzeb — nie zakładamy, że są częścią każdego odbioru.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-2-button" aria-expanded="false" aria-controls="faq-usluga-2-answer">
+    <span>Ile czasu zajmuje kontrola?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-2-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-2-button">Zależy to od wielkości lokalu, jego stanu, dostępności pomieszczeń i zakresu sprawdzenia. Przewidywany czas uzgadniamy przed wizytą, aby można było zarezerwować odpowiedni termin u dewelopera.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-3-button" aria-expanded="false" aria-controls="faq-usluga-3-answer">
+    <span>Czy termowizja jest przydatna przy każdym odbiorze?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-3-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-3-button">Nie zawsze. Obraz termiczny pokazuje temperaturę powierzchni, a jego interpretacja zależy m.in. od warunków pogodowych, ogrzewania i rodzaju materiału. Przed wizytą ustalamy, czy badanie pomoże w ocenie zgłoszonego problemu i czy warunki pozwalają je wykonać.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-4-button" aria-expanded="false" aria-controls="faq-usluga-4-answer">
+    <span>Czy odbiór wykryje wszystkie wady budynku?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-4-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-4-button">Kontrola dotyczy uzgodnionego zakresu i dostępnych elementów. Nie daje gwarancji wykrycia wad ukrytych w konstrukcji lub pod wykończeniem. Jeśli zauważymy problem wymagający dodatkowych badań, omówimy dalszą diagnostykę.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-5-button" aria-expanded="false" aria-controls="faq-usluga-5-answer">
+    <span>Kiedy potrzebuję ekspertyzy zamiast odbioru?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-5-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-5-button">Gdy chodzi o przyczynę konkretnego problemu, np. pęknięć, odkształceń lub uszkodzeń istniejącego budynku. Opisz sytuację przy zgłoszeniu. Ustalimy, czy potrzebna jest ekspertyza, dodatkowe badania czy inny rodzaj kontroli.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-6-button" aria-expanded="false" aria-controls="faq-usluga-6-answer">
+    <span>Czy sprawdzacie mieszkania także w Gdańsku?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-6-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-6-button">Tak, usługi obejmują Chojnice, Gdańsk i województwo pomorskie. Dostępność potwierdzamy dla wskazanej miejscowości i terminu. Jeśli potrzebujesz kontroli robót podczas trwającej budowy, zobacz <a href="/uslugi-nadzor-i-kierownik-budowy" class="underline hover:text-accent">kierownika budowy i nadzór inwestorski</a>.</div>
+</div>
+</div>
   </div>
+</section>
+<!-- shared-faq:end -->
+
+      <!-- SHARED SERVICE CTA: src/templates/service-cta.html -->
+      <section id="kontakt-usluga" class="service-cta" aria-labelledby="service-contact-title">
+        <span class="service-cta-label font-mono">// OCHRONA PRZED KOSZTAMI POPRAWEK</span>
+        <h2 id="service-contact-title" class="service-cta-title font-heading">Nie płać za błędy dewelopera z własnej kieszeni</h2>
+        <p class="service-cta-description font-sans">Podaj miejscowość, powierzchnię nieruchomości i termin odbioru. Ustalimy zakres kontroli, dostępność i cenę przed wizytą.</p>
+        <a href="/kontakt" class="service-cta-button font-mono">
+          Zapytaj o współpracę <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_forward</span>
+        </a>
+        <p class="service-cta-phone font-sans">Wolisz zadzwonić? <a href="tel:+48884757815">+48 884 757 815</a></p>
+      </section>
+      <!-- END SHARED SERVICE CTA -->
+
+    </div>
+  </main>
 
   <!-- FOOTER -->
   <footer class="bg-black text-gray-400 py-16 border-t border-zinc-800 font-mono text-xs mt-auto">

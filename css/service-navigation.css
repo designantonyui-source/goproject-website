@@ -1,0 +1,17 @@
+.dropdown-container:focus-within .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateY(0) !important;
+  transition: none !important;
+}
+#header-nav a:focus-visible,
+#mobile-menu a:focus-visible,
+#mobile-menu button:focus-visible,
+#mobile-menu-btn:focus-visible {
+  outline: 2px solid #ff3b00;
+  outline-offset: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  #main-header, #mobile-menu, .dropdown-menu { transition: none !important; }
+}

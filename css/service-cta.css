@@ -1,0 +1,72 @@
+.service-cta {
+  padding: 3.5rem;
+  border: 1px solid #27272a;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  scroll-margin-top: 7rem;
+}
+.service-cta-label {
+  display: block;
+  margin-bottom: .5rem;
+  color: #ff3b00;
+  font-size: .6875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.service-cta-title {
+  margin: 0 auto 1rem;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+.service-cta-description {
+  max-width: 42rem;
+  margin: 0 auto 2rem;
+  color: #9ca3af;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.service-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .625rem;
+  min-height: 50px;
+  max-width: 100%;
+  padding: .875rem 2rem;
+  background: #ff3b00;
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background-color .2s ease;
+}
+.service-cta-button:hover { background: #e03500; }
+.service-cta-button:focus-visible,
+.service-cta-phone a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 5px;
+}
+.service-cta-phone {
+  margin-top: 1rem;
+  color: #9ca3af;
+  font-size: .875rem;
+  line-height: 1.6;
+}
+.service-cta-phone a { color: #fff; text-decoration: underline; }
+.service-cta-phone a:hover { color: #ff3b00; }
+@media (max-width: 767px) {
+  .service-cta { padding: 2.5rem 1.5rem; }
+  .service-cta-title { font-size: 1.875rem; }
+  .service-cta-description { font-size: .875rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .service-cta-button { transition: none; }
+}

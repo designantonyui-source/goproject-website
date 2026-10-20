@@ -24,6 +24,10 @@
   <link rel="preload" href="./fonts/space-grotesk-700-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.min.css?v=sharp-20261013" />
+  <link rel="stylesheet" href="/css/service-hero.css?v=20261015" />
+  <link rel="stylesheet" href="/css/service-cta.css?v=20261015" />
+  <link rel="stylesheet" href="/css/service-navigation.css?v=20261015" />
+  <link rel="stylesheet" href="/css/service-content.css?v=20261015-2" />
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp&amp;icon_names=arrow_back,arrow_downward,arrow_forward,assignment_turned_in,calculate,calendar_month,call,check,check_circle,chevron_left,chevron_right,close,crop_free,description,explore,grid_view,home,keyboard_arrow_down,layers,location_on,mail,menu,north_east,schedule,send,task,verified_user,zoom_in&amp;display=block" />
   <link rel="canonical" href="https://goproject.com.pl/uslugi-formalnosci-i-energetyka" />
@@ -125,6 +129,9 @@
     }
   </style>
   <script defer src="/js/analytics.js" data-measurement-id="G-38PL1XHPN5" data-privacy-url="/polityka-prywatnosci.html"></script>
+  <script defer src="/js/service-navigation.js?v=20261015"></script>
+  <link rel="stylesheet" href="/css/shared-faq.css?v=20261015-2" />
+  <script defer src="/js/shared-faq.js?v=20261015-2"></script>
 </head>
 <body class="bg-white text-black font-sans antialiased selection:bg-accent selection:text-white">
   <!-- HEADER -->
@@ -196,7 +203,7 @@
         <div class="border-b border-zinc-800/80 pb-4">
           <button id="mobile-oferta-toggle" class="w-full flex items-center justify-between font-bold text-accent py-2 text-base">
             <span>// OFERTA USŁUG</span>
-            <span id="mobile-oferta-arrow" class="ms-icon ms-icon--small transition-transform duration-200 rotate-180" aria-hidden="true">keyboard_arrow_down</span>
+            <span id="mobile-oferta-arrow" class="ms-icon ms-icon--medium transition-transform duration-200 rotate-180" aria-hidden="true">keyboard_arrow_down</span>
           </button>
           <div id="mobile-oferta-submenu" class="pl-4 pt-3 space-y-2 text-sm sm:text-base border-l-2 border-accent/60 ml-1 mt-2">
             <a href="/uslugi-projekty-i-adaptacje" class="block py-2.5 text-zinc-200 font-medium hover:text-accent transition-colors">01 / Projekty budowlane & adaptacje</a>
@@ -210,22 +217,22 @@
         <div class="space-y-1 font-mono text-base font-medium uppercase tracking-wider">
           <a href="/o-nas" class="py-3 border-b border-zinc-800/80 text-zinc-200 hover:text-accent transition-colors flex items-center justify-between">
             <span>O pracowni</span>
-            <span class="ms-icon ms-icon--small text-zinc-500" aria-hidden="true">north_east</span>
+            <span class="ms-icon ms-icon--medium text-zinc-500" aria-hidden="true">north_east</span>
           </a>
           <a href="/projekty" class="py-3 border-b border-zinc-800/80 text-zinc-200 hover:text-accent transition-colors flex items-center justify-between">
             <span>Portfolio Projektów</span>
-            <span class="ms-icon ms-icon--small text-zinc-500" aria-hidden="true">north_east</span>
+            <span class="ms-icon ms-icon--medium text-zinc-500" aria-hidden="true">north_east</span>
           </a>
           <a href="/kontakt" class="py-3 border-b border-zinc-800/80 text-zinc-200 hover:text-accent transition-colors flex items-center justify-between">
             <span>Kontakt</span>
-            <span class="ms-icon ms-icon--small text-zinc-500" aria-hidden="true">north_east</span>
+            <span class="ms-icon ms-icon--medium text-zinc-500" aria-hidden="true">north_east</span>
           </a>
         </div>
 
         <!-- QUICK CONTACT & CTA -->
         <div class="pt-4 space-y-3">
           <a href="tel:+48884757815" class="w-full h-12 bg-zinc-900 border border-zinc-800 hover:border-accent text-white font-mono text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2.5 transition-all">
-            <span class="ms-icon ms-icon--small text-accent" aria-hidden="true">call</span>
+            <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">call</span>
             <span>Zadzwoń: +48 884 757 815</span>
           </a>
         </div>
@@ -239,102 +246,248 @@
       </div>
     </div>
 
-  <div class="pt-28 md:pt-32 pb-24 bg-white text-black min-h-screen">
+  <main class="pt-28 md:pt-32 pb-24 bg-white text-black min-h-screen">
     <div class="max-w-[1600px] mx-auto px-4 md:px-10">
       <a href="/uslugi" class="inline-flex items-center gap-2 font-mono text-xs font-bold text-gray-500 hover:text-black uppercase tracking-wider mb-8 transition-colors">
-        <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_back</span> Wszystkie usługi
+        <span class="ms-icon ms-icon--medium" aria-hidden="true">arrow_back</span> Wszystkie usługi
       </a>
 
-      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16 pb-10 border-b border-gray-200">
-        <div class="max-w-4xl">
-          <div class="inline-block font-mono text-xs font-bold text-accent uppercase tracking-widest mb-3 bg-accent/10 border border-accent/30 px-3.5 py-1">
-            04 / FORMALNOŚCI & ENERGIA // CHOJNICE, GDAŃSK & POMORSKIE
+      <section class="mb-16" aria-labelledby="service-hero-title">
+        <div class="service-hero">
+          <div class="service-hero-copy">
+            <div class="font-mono text-xs font-bold text-accent uppercase tracking-widest mb-5">04 / Formalności i energetyka · Chojnice, Gdańsk, Pomorskie</div>
+            <h1 id="service-hero-title" class="font-heading font-extrabold text-4xl md:text-5xl xl:text-6xl mb-6">Warunki zabudowy i świadectwa energetyczne</h1>
+            <p class="font-sans text-gray-700 text-base md:text-xl leading-relaxed mb-8">Pomagamy przygotować wniosek o warunki zabudowy i dokumentację energetyczną. Ustalamy, jakich dokumentów potrzebujesz do swojej inwestycji lub nieruchomości.</p>
+            <a href="#zakres-uslugi" class="service-hero-scroll font-mono text-xs font-bold uppercase tracking-wider">
+              <span class="ms-icon ms-icon--medium" aria-hidden="true">arrow_downward</span>
+              <span>Poniżej: zakres i przebieg współpracy</span>
+            </a>
           </div>
-          <h1 class="font-heading font-extrabold text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-            Warunki zabudowy (WZ) i świadectwa energetyczne w Chojnicach
-          </h1>
-          <p class="font-sans text-gray-700 text-base md:text-xl leading-relaxed">
-            GoProject przygotowuje wnioski o warunki zabudowy (WZ), świadectwa charakterystyki energetycznej i dokumentację związaną z formalnościami budowlanymi. Usługi są dostępne w Chojnicach, Gdańsku i województwie pomorskim.
-          </p>
+          <figure class="service-hero-image">
+            <img src="/img/projects/domy-szeregowe/domy-szeregowe-osiedle-widok-z-drona-masterplan.jpg" alt="Wizualizacja zagospodarowania osiedla domów szeregowych GoProject z lotu ptaka" fetchpriority="high">
+            <figcaption>Osiedle domów szeregowych · Wizualizacja GoProject</figcaption>
+          </figure>
         </div>
+      </section>
 
-        <!-- SERVICE VALUE / SPECS CARD (REPLACES REDUNDANT PHONE BOX) -->
-        <div class="p-6 bg-studio-surface border border-gray-200 flex flex-col justify-between shrink-0 lg:w-80 shadow-sm">
-          <div>
-            <div class="font-mono text-[10px] font-bold text-accent uppercase tracking-widest mb-1.5">// PARAMETRY USŁUGI</div>
-            <div class="font-heading font-bold text-sm text-black mb-3">Świadectwa & Decyzje WZ</div>
-            
-            <div class="space-y-2.5 font-sans text-xs text-gray-600 border-t border-gray-200 pt-3">
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Czas realizacji:</span>
-                <span class="font-bold text-black">24 – 48h (SCHE)</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Rejestr państwowy:</span>
-                <span class="font-bold text-black">Wpis MRiT</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Zasięg:</span>
-                <span class="font-bold text-black">Gdańsk / Pomorskie</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-gray-400 font-mono text-[11px]">Odpowiedzialny:</span>
-                <span class="font-bold text-black">mgr inż. Adam Kubat</span>
-              </div>
-            </div>
-          </div>
+      <section class="mb-20" id="zakres-uslugi" aria-labelledby="formal-services-title">
+      <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// DOBIERZ DOKUMENT DO CELU</span>
+      <h2 id="formal-services-title" class="font-heading font-bold text-3xl md:text-4xl mb-8">W czym możemy pomóc?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- service-options:start -->
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">01</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Wniosek o warunki zabudowy</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Dla inwestora planującego zabudowę działki. Sprawdzamy sytuację planistyczną, omawiamy zamierzenie i przygotowujemy uzgodniony zakres dokumentów do wniosku. Decyzję wydaje właściwy urząd.</p>
+</div>
 
-          <a href="/kontakt" class="h-[40px] px-4 bg-black text-white hover:bg-accent font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center gap-2 transition-all w-full mt-4">
-            <span>Zapytaj o wycenę <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_forward</span></span>
-          </a>
-        </div>
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">02</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Świadectwo energetyczne</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Dokument opisujący zapotrzebowanie budynku lub lokalu na energię. Przygotowujemy go na podstawie danych o nieruchomości i instalacjach, odpowiednio do celu zlecenia.</p>
+</div>
+
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">03</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Audyt energetyczny</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Dla właściciela, który planuje termomodernizację. Analiza pomaga określić zakres usprawnień energetycznych. Jeśli korzystasz z dofinansowania, wymagania dokumentacji sprawdzamy dla konkretnego programu.</p>
+</div>
+
+<div class="service-option">
+  <span class="service-option-number font-mono text-xs font-bold" aria-hidden="true">04</span>
+  <h3 class="font-heading font-bold text-lg mb-2">Pozostałe formalności</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Omawiamy potrzebne uzgodnienia, np. dotyczące zjazdu lub uwarunkowań środowiskowych. Możliwość obsługi, wymagane opracowania i udział specjalistów ustalamy dla konkretnej inwestycji.</p>
+</div>
+
+<!-- service-options:end --></div>
+      </section>
+      <section class="service-prep mb-20" aria-labelledby="wz-prep-title">
+      <div class="service-prep-layout">
+      <div class="service-prep-intro">
+      <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// DZIAŁKA I PLANOWANA ZABUDOWA</span>
+      <h2 id="wz-prep-title" class="font-heading font-bold text-3xl md:text-4xl mb-8">Co przygotować do sprawy WZ?</h2>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Zacznij od numeru działki, obrębu i gminy. Opisz, co chcesz zbudować. Sprawdzimy dostępne ustalenia planistyczne i omówimy, czy procedura WZ jest właściwa dla Twojej sprawy.</p>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Rezultatem naszego zakresu prac jest przygotowana dokumentacja do wniosku i wskazanie dalszych kroków. Sposób złożenia, pełnomocnictwo i obsługę ewentualnych uzupełnień ustalamy przed zleceniem.</p>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Przygotowanie wniosku nie oznacza uzyskania pozytywnej decyzji. Czas opracowania dokumentów oraz czas postępowania w urzędzie to dwa odrębne etapy.</p>
       </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">01</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Warunki Zabudowy (WZ)</h3>
-          <p class="font-sans text-xs text-gray-600">Opracowywanie wniosków WZ i reprezentacja przed Urzędami Gminy.</p>
-        </div>
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">02</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Świadectwa Energetyczne</h3>
-          <p class="font-sans text-xs text-gray-600">Certyfikaty do sprzedaży/wynajmu/odbioru z wpisem do rejestru MRiT w 24-48h.</p>
-        </div>
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">03</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Audyty Energetyczne</h3>
-          <p class="font-sans text-xs text-gray-600">Dokumentacja do programu "Czyste Powietrze" i termomodernizacji.</p>
-        </div>
-        <div class="p-6 bg-studio-surface border border-gray-200">
-          <div class="w-9 h-9 rounded-full bg-black text-white font-mono text-xs font-bold flex items-center justify-center mb-4">04</div>
-          <h3 class="font-heading font-bold text-lg mb-2">Operaty & Uzgodnienia</h3>
-          <p class="font-sans text-xs text-gray-600">Uzgodnienia zjazdów z dróg publicznych i decyzje środowiskowe.</p>
-        </div>
+      <ul class="service-prep-list">
+      <li>
+      <span class="font-mono text-xs font-bold text-accent">01</span>
+      <div>
+      <h3 class="font-heading font-bold text-lg mb-2">Dane działki</h3>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Numer działki, obręb, gmina i lokalizacja. Przygotuj posiadane informacje o planie miejscowym oraz wcześniejsze decyzje.</p>
       </div>
-
-      <!-- DUAL ACTION CLOSING BANNER -->
-      <div class="bg-black text-white p-10 md:p-14 text-center border border-zinc-800 shadow-2xl">
-        <span class="font-mono text-[11px] font-bold text-accent uppercase tracking-widest block mb-2">// PEŁNOMOCNICTWO INWESTORSKIE &amp; EKSPRESOWE DOKUMENTY</span>
-        <h2 class="font-heading font-extrabold text-3xl md:text-5xl mb-4 text-white">
-          Przyspiesz formalności budowlane i uniknij odrzuceń wniosków
-        </h2>
-        <p class="font-sans text-gray-400 text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
-          Zamów legalne świadectwo energetyczne z wpisem do rejestru MRiT lub powierz prowadzenie procedury WZ inżynierowi z doświadczeniem urzędowym.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="tel:+48884757815" class="h-[50px] px-8 bg-accent hover:bg-accent-hover text-white font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center gap-2.5 transition-all shadow-lg w-full sm:w-auto">
-            <span class="ms-icon ms-icon--small" aria-hidden="true">call</span>
-            <span>Zadzwoń: +48 884 757 815</span>
-          </a>
-          <a href="/kontakt" class="h-[50px] px-8 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center gap-2.5 transition-all w-full sm:w-auto">
-            <span class="ms-icon ms-icon--small" aria-hidden="true">description</span>
-            <span>Zamów WZ lub świadectwo energetyczne <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_forward</span></span>
-          </a>
-        </div>
+      </li>
+      <li>
+      <span class="font-mono text-xs font-bold text-accent">02</span>
+      <div>
+      <h3 class="font-heading font-bold text-lg mb-2">Opis zamierzenia</h3>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Rodzaj budynku, przewidywana funkcja, orientacyjne gabaryty i sposób zagospodarowania terenu. Dostępną koncepcję omówimy razem.</p>
       </div>
+      </li>
+      <li>
+      <span class="font-mono text-xs font-bold text-accent">03</span>
+      <div>
+      <h3 class="font-heading font-bold text-lg mb-2">Mapa i załączniki</h3>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Przygotuj posiadane mapy. Rodzaj i zakres potrzebnych załączników dobieramy do wniosku oraz konkretnej sprawy.</p>
+      </div>
+      </li>
+      <li>
+      <span class="font-mono text-xs font-bold text-accent">04</span>
+      <div>
+      <h3 class="font-heading font-bold text-lg mb-2">Dojazd i media</h3>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Przekaż informacje o dostępie do drogi, planowanym zjeździe i zaopatrzeniu w media, a także wcześniejszą korespondencję z urzędem lub gestorami.</p>
+      </div>
+      </li>
+      </ul>
+      </div>
+      </section>
+      <section class="mb-20" aria-labelledby="energy-prep-title">
+      <div class="service-prep-layout">
+      <div class="service-prep-intro">
+      <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// BUDYNEK I INSTALACJE</span>
+      <h2 id="energy-prep-title" class="font-heading font-bold text-3xl md:text-4xl mb-8">Jak przygotować dane energetyczne?</h2>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Powiedz, do czego potrzebujesz dokumentu: sprzedaży, najmu, zakończenia budowy czy planowania modernizacji. Świadectwo charakterystyki energetycznej i audyt energetyczny mają różne zadania.</p>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Świadectwo opisuje charakterystykę energetyczną nieruchomości. Audyt służy analizie planowanych usprawnień. Zakres opracowania i potrzebę wizji lokalnej ustalamy na podstawie celu oraz dostępnych danych.</p>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Nie musisz znać wszystkich parametrów na pierwszą rozmowę. Wskażemy, czego brakuje. Nie zastępujemy brakujących informacji przypadkowymi założeniami.</p>
+      </div>
+      <ul class="service-prep-list">
+      <li>
+      <span class="font-mono text-xs font-bold text-accent">01</span>
+      <div>
+      <h3 class="font-heading font-bold text-lg mb-2">Podstawowe dane</h3>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Adres, rodzaj nieruchomości, powierzchnia, rok budowy i cel przygotowania dokumentu.</p>
+      </div>
+      </li>
+      <li>
+      <span class="font-mono text-xs font-bold text-accent">02</span>
+      <div>
+      <h3 class="font-heading font-bold text-lg mb-2">Rzuty i dokumentacja</h3>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Dostępny projekt, rzuty, przekroje lub dokumentacja powykonawcza. Zaznacz zmiany wykonane względem projektu.</p>
+      </div>
+      </li>
+      <li>
+      <span class="font-mono text-xs font-bold text-accent">03</span>
+      <div>
+      <h3 class="font-heading font-bold text-lg mb-2">Przegrody i stolarka</h3>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Informacje o ścianach, dachu, podłogach, izolacji, oknach i drzwiach — w zakresie dostępnej dokumentacji.</p>
+      </div>
+      </li>
+      <li>
+      <span class="font-mono text-xs font-bold text-accent">04</span>
+      <div>
+      <h3 class="font-heading font-bold text-lg mb-2">Ogrzewanie i pozostałe systemy</h3>
+      <p class="font-sans text-sm text-gray-600 leading-relaxed">Dane o źródle ciepła, przygotowaniu ciepłej wody, wentylacji, chłodzeniu i instalacjach odnawialnych źródeł energii, jeśli występują.</p>
+      </div>
+      </li>
+      </ul>
+      </div>
+      </section>
+      <section class="mb-20" aria-labelledby="formal-steps-title">
+      <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-3">// PRZEBIEG WSPÓŁPRACY</span>
+      <h2 id="formal-steps-title" class="font-heading font-bold text-3xl md:text-4xl mb-12">Od pierwszego kontaktu do dokumentacji</h2>
+      <!-- service-steps:start -->
+<ol class="service-steps mt-14">
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">01</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Rozmowa o celu</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Omawiamy działkę lub nieruchomość, potrzebny dokument, lokalizację i oczekiwany termin.</p>
+</li>
+
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">02</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Zakres i wycena</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Sprawdzamy dostępne dane. Ustalamy opracowanie, potrzebne załączniki, cenę i termin naszej pracy.</p>
+</li>
+
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">03</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Przygotowanie dokumentów</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Opracowujemy uzgodniony zakres. Wyjaśniamy brakujące informacje i potrzebę dodatkowych ustaleń.</p>
+</li>
+
+<li>
+  <span class="step-number font-mono text-sm font-bold" aria-hidden="true">04</span>
+  <h3 class="font-heading font-bold text-lg mb-3">Przekazanie i dalsze kroki</h3>
+  <p class="font-sans text-sm text-gray-600 leading-relaxed">Przekazujemy dokumentację i omawiamy jej wykorzystanie. Obsługę postępowania urzędowego ustalamy oddzielnie.</p>
+</li>
+
+</ol>
+<!-- service-steps:end -->
+      </section>
+      <!-- shared-faq:start -->
+<section id="faq-usluga" class="shared-faq mb-20" aria-labelledby="formal-faq-title">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-10">
+    <div class="faq-heading text-center max-w-3xl mx-auto mb-16">
+      <span class="font-mono text-xs font-bold text-accent uppercase tracking-widest block mb-2">// PYTANIA PRZED ZLECENIEM</span>
+      <h2 id="formal-faq-title" class="font-heading font-extrabold text-3xl md:text-5xl">Pytania o formalności i energetykę</h2>
     </div>
+    <div class="faq-list space-y-4"><div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-1-button" aria-expanded="false" aria-controls="faq-usluga-1-answer">
+    <span>Czy dla każdej działki potrzebne są warunki zabudowy?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-1-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-1-button">Nie. Najpierw trzeba sprawdzić ustalenia planistyczne i rodzaj planowanej inwestycji. Podaj numer działki, obręb i gminę — omówimy właściwą ścieżkę. Jeśli masz już ustalenia dla działki, zobacz również <a href="/uslugi-projekty-i-adaptacje" class="underline hover:text-accent">projekty domów i adaptacje</a>.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-2-button" aria-expanded="false" aria-controls="faq-usluga-2-answer">
+    <span>Czym różni się świadectwo energetyczne od audytu?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-2-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-2-button">Świadectwo określa charakterystykę energetyczną budynku lub lokalu. Audyt analizuje możliwości poprawy efektywności i zakres modernizacji. Dokumenty nie są zamienne; dobieramy je do celu oraz wymagań konkretnej sprawy.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-3-button" aria-expanded="false" aria-controls="faq-usluga-3-answer">
+    <span>Ile kosztuje przygotowanie dokumentacji?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-3-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-3-button">Cena zależy od rodzaju opracowania, wielkości i złożoności nieruchomości oraz kompletności danych. Dodatkowe pomiary, dojazdy i obsługę urzędową ustalamy osobno. Podaj cel zlecenia i lokalizację, aby omówić wycenę.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-4-button" aria-expanded="false" aria-controls="faq-usluga-4-answer">
+    <span>Jak długo trwa przygotowanie dokumentów?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-4-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-4-button">Termin naszej pracy potwierdzamy po sprawdzeniu zakresu i dostępnych danych. Nie zakładamy jednego terminu 24–48 godzin dla wszystkich zleceń. Przy WZ osobno należy uwzględnić postępowanie urzędowe, uzgodnienia i ewentualne uzupełnienia.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-5-button" aria-expanded="false" aria-controls="faq-usluga-5-answer">
+    <span>Co jeśli nie mam projektu lub pełnych danych budynku?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-5-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-5-button">Przekaż dokumenty, które posiadasz, i opisz stan nieruchomości. Wskażemy brakujące informacje oraz możliwość ich uzupełnienia. Przed potwierdzeniem zakresu ustalimy, czy potrzebne są oględziny, pomiary lub dodatkowa dokumentacja.</div>
+</div>
+
+<div class="faq-item border border-gray-200 bg-studio-surface overflow-hidden">
+  <button type="button" class="faq-toggle w-full p-6 text-left flex justify-between items-center font-heading font-bold text-lg hover:text-accent transition-colors" id="faq-usluga-6-button" aria-expanded="false" aria-controls="faq-usluga-6-answer">
+    <span>Czy pomagacie przy dokumentach do programu Czyste Powietrze?</span>
+    <span class="ms-icon ms-icon--medium text-accent" aria-hidden="true">keyboard_arrow_down</span>
+  </button>
+  <div id="faq-usluga-6-answer" class="faq-content hidden px-6 pb-6 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-4" aria-labelledby="faq-usluga-6-button">Możemy omówić zakres dokumentacji energetycznej dla planowanej modernizacji. Przed zleceniem trzeba sprawdzić aktualne zasady programu, wymagania dotyczące opracowań i osób je sporządzających. Przygotowanie dokumentu nie jest gwarancją przyznania dofinansowania.</div>
+</div>
+</div>
   </div>
+</section>
+<!-- shared-faq:end -->
+
+      <!-- SHARED SERVICE CTA: src/templates/service-cta.html -->
+      <section id="kontakt-usluga" class="service-cta" aria-labelledby="service-contact-title">
+        <span class="service-cta-label font-mono">// DOKUMENTY DO TWOJEJ INWESTYCJI</span>
+        <h2 id="service-contact-title" class="service-cta-title font-heading">Ustal, jakich dokumentów potrzebujesz</h2>
+        <p class="service-cta-description font-sans">Opisz działkę lub nieruchomość i cel zlecenia. Omówimy potrzebne dane, zakres dokumentacji, cenę i możliwy termin przygotowania.</p>
+        <a href="/kontakt" class="service-cta-button font-mono">
+          Zapytaj o współpracę <span class="ms-icon ms-icon--small" aria-hidden="true">arrow_forward</span>
+        </a>
+        <p class="service-cta-phone font-sans">Wolisz zadzwonić? <a href="tel:+48884757815">+48 884 757 815</a></p>
+      </section>
+      <!-- END SHARED SERVICE CTA -->
+
+    </div>
+  </main>
 
   <!-- FOOTER -->
   <footer class="bg-black text-gray-400 py-16 border-t border-zinc-800 font-mono text-xs mt-auto">
